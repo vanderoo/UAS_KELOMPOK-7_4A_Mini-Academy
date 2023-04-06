@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat:wght@500&display=swap");
+
+:root {
+  /* /font and typography/ */
+  body-font: "montserrat", sans-serif;
+  biggest-font-size: 2.25rem;
+  h1-font-size: 1.5rem;
+  h2-font-size: 1.25rem;
+  h3-font-size: 1rem;
+  normal-font-size: 0.938rem;
+  small-font-size: 0.813rem;
+  smaller-font-size: 0.75rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat", sans-serif;
+  justify-content: center;
+  align-items: center;
+  min-height: auto;
+  font-size: var(normal-font-size);
+  background-color: #ffffff;
+  color: hsl(227, 15%, 50%);
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  font-family: "montserrat", sans-serif;
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 0.8);
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(0, 136, 169, 1);
+}
+
+/* /login page/ */
+
+.page--login {
+  display: flex;
+}
+
+/*  */
+.login {
+  background-color: cornflowerblue;
+  position: absolute;
+  width: 435px;
+  height: 623px;
+  left: 889px;
+  top: 138px;
+}
+.login p {
+  text-align: center;
+}
+form input {
+  width: 100%;
+  outline: none;
+  border: 1px solid #49bbbd;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  border-radius: 40px;
+  background: #fff;
+}
+
+.forgot {
+  text-align: right;
+  font-size: 12px;
+  margin: 8px 14px 0px 0px;
+}
+
+.forgot a {
+  color: #000;
+}
+
+.login-button {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 1.8rem;
+  padding: 10px 0;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  width: 100%;
+  color: white;
+  cursor: pointer;
+  background: #175747;
+}

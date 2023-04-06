@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment | Mini Academy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/payment.css">
+    <link rel="shortcut icon" type="text/css" href="ASET/ICON/minilogo.ico">
+
+</head>
+<body>
+    <nav>
+    <header class="header">
+        <img class="logo" src="ASET/GAMBAR/minilogo.png" alt="logo" width="70" height="70">
+        <nav>
+            <ul class="nav__link">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Course.html">Course</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#"><button>Login</button></a>
+        <a class="cta" href="#"><button class="signup">Sign Up</button></a>
+    </header>
+    </nav>
+    <div class="main-container">
+        <div class="payment-container">
+            <div class="form-pembayaran">
+
+                <h2>Checkout</h2>
+                <h4>Card Type</h4>
+                <div class="card-type">
+                    <img src="assets/logo/paypal.svg" alt="">
+                    <img src="assets/logo/amex.svg" alt="">
+                    <img src="assets/logo/visa.svg" alt="">
+                    <img src="assets/logo/cc.svg" alt="">
+                </div>
+
+                <form action="#">
+                    <div class="form-normal">
+                        <label for="input">Name on Card</label>
+                        <input type="text" placeholder="Enter Name on Card">
+                        <label for="input">Card Number</label>
+                        <input type="text" placeholder="Enter Card Number">
+                    </div>
+                    <div class="form-split">
+                        <div class="form-split-vertical">
+                            <label for="input">Expiration Date (MM/YY)</label>
+                            <input type="text" placeholder="Enter Expiration Date">
+                        </div>
+                        <div class="form-split-vertical">
+                            <label for="input">CVC</label>
+                            <input type="text" placeholder="Enter CVC">
+                        </div>
+                    </div>
+                </form>
+                <div class="remember">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">Save my information for faster checkout</label>
+                </div>
+                <a href="MyCourse.html"><button class="button-buy">Confirm Payment</button></a>
+
+            </div>
+            <div class="summary">
+                <p id="sum">Summary</p>
+                <div class="courses">
+                    <div class="courses-banner">
+                        <img src="assets/img/buy_banner.svg" alt="">
+                    </div>
+                    <div class="course-info">
+                        <h4>AWS Certified solutions Architect</h4>
+                        <p>Lorem ipsum dolor sit amet...</p>
+                        <h3>Rp. 500.000</h3>
+                    </div>
+                </div>
+                <div class="sum-payment">
+                    <p>Total Course</p>
+                    <p>1</p>
+                </div>
+                <div class="sum-payment">
+                    <p>Subtotal</p>
+                    <p>Rp. 500.000</p>
+                </div>
+                <div class="sum-payment">
+                    <p>Discount</p>
+                    <p>50%</p>
+                </div>
+                <div class="total">
+                    <p>Total</p>
+                    <p>Rp. 250.000</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+    <footer class="footer section">
+        <center>
+        <div class="footer--container container grid">
+            <div>
+                <img src="ASET/GAMBAR/logofooter.png" class="footer--logo">
+                <p class="footer--description">
+                    "Unlock your potential with our academy's courses today."
+                </p>
+                <p class="copyright">@2023 Team Seven</p>
+            </div>
+        </div>
+        </center>
+    </footer>
+</html>

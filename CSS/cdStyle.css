@@ -1,0 +1,389 @@
+.banner img{
+    width: 100%;
+    height: auto;
+}
+
+
+.course{
+    display: flex;
+    position: relative;
+    padding: 0 120px;
+    min-height: 1012px;
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.buy {
+    padding: 30px;
+
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 3px 6px 0 rgba(1, 1, 1, 0.2);
+}
+
+.buy img{
+    width: 100%;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 18px;
+}
+
+#harga {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+
+    
+    color: #000000;
+}
+#diskon {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    color: rgba(0, 0, 0, 0.5);
+}
+#waktu-diskon {
+    margin-top:30px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #49BBBD;
+    text-align: center;
+}
+
+.button-buy {
+    margin-top: 30px;
+    width: 100%;
+    height: 64px;
+    background: #49BBBD;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.buy hr {
+    margin-top: 30px;
+}
+
+.buy .sub {
+    margin-top: 30px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 0.02em;
+
+    color: #000000;
+}
+
+.include {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+
+.list {
+    display: flex;
+    gap: 10px;
+}
+
+.list p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.list img {
+    width: 20px;
+    height: 23px;
+}
+
+.training p{
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    /* or 25px */
+    
+    letter-spacing: 0.02em;
+    
+    color: #696984;
+}
+
+    
+
+.information {
+    margin-top: 40px;
+    width: 50vw;
+}
+
+.information .judul {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 44px;
+    
+    color: #252641;
+}
+
+.share .media {
+    margin-top: 30px;
+    display: flex;
+    gap: 36px;
+}
+
+.share .media img {
+    width: 36px;
+    height: 36px;
+}
+
+.detail {
+    width: 100%;
+}
+
+.tentang-bootcamp-container p {
+    margin-top: 20px;
+    text-align: justify;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+    /* or 36px */
+
+    letter-spacing: 0.02em;
+
+    color: #696984;
+}
+
+.detail-title {
+    margin-top: 40px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+    color: #49BBBD;
+}
+
+.silabus-accordion  {
+    max-width: 100%;
+    margin-top: 20px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #252641;
+    cursor: pointer;
+}
+
+.silabus-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.silabus-title h3 {
+    font-size: 18px;
+    color: #252641;
+}
+
+.silabus-desc {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease;
+}
+.silabus-desc p {
+    padding: 12px;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.silabus-accordion.active img {
+    transform: rotate(180deg);
+}
+
+.silabus-title img {
+    transition: transform 0.8s ease-in;
+}
+
+.silabus-accordion.active .silabus-desc {
+    max-height: 300px;
+    animation: fade 1s ease-in-out;
+}
+
+
+.lainnya-container {
+    padding: 0 120px;
+    margin-top: 140px;
+    height: 1020px;
+    background-color: #9dccff42;
+}
+
+.lainnya {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lainnya h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+
+    color: #000000;
+}
+
+.lainnya a {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    
+    
+    color: #49BBBD;
+}
+
+.course-lainnya {
+    margin-top:40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+
+.course-card {
+    height: 93%;
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 18.83px 47.08px rgba(47, 50, 125, 0.1);
+    border-radius: 20px;
+    
+}
+
+.course-card img {
+    width: 100%;
+    height: auto;
+}
+
+.info-course-deskripsi h1 {
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+
+    color: #252641;
+}
+
+.info-course-deskripsi p {
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+    /* or 32px */
+
+    letter-spacing: 0.02em;
+
+    color: #696984;
+}
+
+.info-course {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-course-lainnya {
+    display: flex;
+    gap: 10px;
+}
+
+.info-course-lainnya img{
+    width: 21px;
+    height: 21px;
+}
+
+.info-course-lainnya p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 180%;
+    /* or 25px */
+
+    letter-spacing: 0.02em;
+
+    color: #696984;
+}
+
+.info-course-price {
+    margin-top: 40px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 16px;
+}
+
+.info-course-price h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+
+    color: #49BBBD;
+}
+
+.info-course-price p {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    text-decoration-line: line-through;
+
+    color: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media screen and (max-width: 991.98px) 
+{
+
+    .course {
+        flex-direction: column;
+        align-items: center;
+    }
+    .buy {
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+    .information {
+        overflow: hidden;
+    }
+    
+    
+}
