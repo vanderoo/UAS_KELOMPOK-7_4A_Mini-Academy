@@ -1,22 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat:wght@500&display=swap");
 
-:root {
-  /* /font and typography/ */
-  body-font: "montserrat", sans-serif;
-  biggest-font-size: 2.25rem;
-  h1-font-size: 1.5rem;
-  h2-font-size: 1.25rem;
-  h3-font-size: 1rem;
-  normal-font-size: 0.938rem;
-  small-font-size: 0.813rem;
-  smaller-font-size: 0.75rem;
-}
 
-/* /awalan/ */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "montserrat", sans-serif;
 }
 
 html {
@@ -24,163 +12,277 @@ html {
 }
 
 body {
-  font-family: "montserrat", sans-serif;
-  font-size: var(normal-font-size);
+  margin: 0;
+  padding: 0;
   background-color: #ffffff;
   color: hsl(227, 15%, 50%);
-  overflow-x: hidden;
+  position: relative;
 }
 
-h1,
-h2,
-h3 {
-  color: #2f327d;
-  font-weight: 600;
-}
+/* /login page/ */
 
-ul {
-  list-style: none;
-}
-
-a {
-  font-family: "montserrat", sans-serif;
-  ont-weight: 500;
-  font-size: 16px;
-  color: #2f327d;
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-button {
-  font-family: "montserrat", sans-serif;
-  margin-left: 20px;
-  padding: 9px 25px;
-  background-color: rgba(0, 136, 169, 0.8);
-  font-weight: 500;
-  font-size: 16px;
-  color: white;
-  border: none;
-  border-radius: 15px;
-  cursor: pointer;
-}
-
-.signup {
-  font-family: "montserrat", sans-serif;
-  margin-left: 20px;
-  padding: 9px 25px;
-  background-color: rgba(0, 136, 169, 0.6);
-  font-weight: 500;
-  font-size: 16px;
-  color: white;
-  border: none;
-  border-radius: 15px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: rgba(0, 136, 169, 1);
-}
-
-.signup:hover {
-  background-color: rgba(0, 136, 169, 0.9);
-}
-
-.container {
-  max-width: 1024px;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-}
-
-.grid {
-  display: grid;
-}
-
-.section {
-  padding: 4.5rem 0 2rem;
-}
-
-.section__title {
-  font-size: var(h2-font-size);
-  margin-bottom: 1rem;
-}
-
-.section__title span {
-  color: #2f327d;
-}
-
-.section__subtitle {
-  display: block;
-  font-size: var(small-font-size);
-  color: #2f327d;
-}
-
-.main {
-  overflow: hidden;
-}
-
-.container {
+.page--login {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 100px;
-  margin: auto;
-}
-/* BAGIAN KIRI */
-.left {
-  margin: auto;
-  align-items: center;
-  margin-top: 25px;
+  position: relative;
+  gap: 10vw;
+  
+  padding: 80px;
 }
 
-.left img {
-  width: 620px;
-  height: auto;
+/*  */
+.login {
+  width: 27vw;
 }
-/* BAGIAN KANAN */
-.right {
-  text-align: center;
-  width: 400px;
-  margin: 0 auto;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-  margin-top: 50px;
-}
-
-.judul {
-  margin-bottom: 20px;
-}
-
-.pilih {
-  margin-bottom: 20px;
-}
-
-.form {
+.header-login {
+  width: 100%;
+  margin-top: 3vw;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.header-login img {
+  width: 30vw;
+  height: auto;
+  display: none;
+}
+
+
+.header-login p {
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.button-container {
+  position: relative;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+  gap: 5px;
+  background: rgba(73, 187, 189, 0.6);
+  border-radius: 33px;
+  padding: 10px;
+  width: 20vw;
+}
+
+.button-container a {
+  padding: 12px;
+  border-radius: 33px;
+}
+
+.login-container {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+  border: none;
+  width: 100%;
+  border-radius: 33px;
+  background-color: rgba(73, 187, 189, 0);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.register-container {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+  border: none;
+  width: 100%;
+  border-radius: 33px;
+  background: transparent;
+  cursor:default;
+  z-index: 1;
+}
+
+.btn-bg-r {
+  width: 10vw;
+  height: 70%;
+  border-radius: 33px;
+  position: absolute;
+  right: 10vw;
+  background: #49bbbd ;
+  margin: 10px;
+  transition: 0.5s;
+}
+
+form {
+  margin-top: 40px;
+}
+
+form input {
+  width: 90%;
+  outline: none;
+  border: 1px solid #49bbbd;
+  padding: 12px 20px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  border-radius: 40px;
+  background: #fff;
+}
+
+.forgot {
+  text-align: right;
+  font-size: 12px;
+}
+
+.forgot a {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.remember {
+  align-items: center;
+}
+
+.remember input {
+  height: 1em;
+  width: 1em;
+  cursor: pointer;
+  margin: 0;
+}
+
+.remember label {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  color: #000000;
+}
+
+.login-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-btns img {
+  margin: 30px 0;
+}
+
+.login-button {
+  font-size: 16px;
+  margin-top: 1.8rem;
+  border-radius: 20px;
+  padding: 10px 0;
+  outline: none;
+  border: none;
+  width: 100%;
+  color: white;
+  cursor: pointer;
+  background: #49bbbd;
+}
+
+.login-button:hover {
+  background-color:rgba(0, 136, 169, 1);;
+}
+
+.google-button {
+  display: flex;
+  gap: 30px;
+  outline: none;
+  border: none;
+  width: 100%;
+  border: 1px solid #49bbbd;
+  padding: 12px 20px;
+  border-radius: 40px;
+  background: #fff;
+  cursor: pointer;
   justify-content: center;
 }
-
-.input-field {
-  margin-bottom: 20px;
+.google-button:hover {
+  background-color: #fff;
+  border: 1px solid rgba(0, 136, 169, 1);
+}
+.google-button img {
+  margin: 0;
+}
+.google-button p {
+  margin: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #ACACAC;
 }
 
-label {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 5px;
+
+.gambar {
+  position: relative;
 }
 
-input[type="text"],
-input[type="password"] {
-  padding: 10px;
-  border: 1px solid #ccd6dd;
-  border-radius: 4px;
-  font-size: 16px;
-  width: 100%;
+.gambar img {
+  width: 40vw;
+}
+
+.logo {
+  position: absolute;
+  top: 1vw;
+  left: 1vw;
+}
+.logo img {
+  width: 7vw;
+}
+
+@media screen and (max-width: 900px){
+  .page--login {
+    padding: 40px;
+  }
+  .main-container {
+    flex-direction: column;
+  }
+  .login--gambar {
+    display: none;
+  }
+  .login {
+    width: 100%;
+  }
+  .header-login img {
+    display: flex;
+  }
+  .button-container {
+    width: 97%;
+  }
+  .google-button {
+    gap: 10px;
+  }
+  .btn-bg-r {
+    width: 50%;
+    right: 30vw;
+  }
+
+  form input {
+    width: 94%;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .page--login {
+    padding: 20px;
+  }
+
+  .button-container {
+    width: 94%;
+  }
+  
+  form input {
+    width: 88%;
+  }
+
 }
