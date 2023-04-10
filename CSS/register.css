@@ -129,43 +129,6 @@ form input {
   background: #fff;
 }
 
-.forgot {
-  text-align: right;
-  font-size: 12px;
-}
-
-.forgot a {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 12px;
-  line-height: 18px;
-  color: #000000;
-}
-
-.remember-forgot {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-}
-
-.remember {
-  align-items: center;
-}
-
-.remember input {
-  height: 1em;
-  width: 1em;
-  cursor: pointer;
-  margin: 0;
-}
-
-.remember label {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 12px;
-  color: #000000;
-}
-
 .login-btns {
   display: flex;
   flex-direction: column;
