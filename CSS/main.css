@@ -88,20 +88,6 @@ button:hover {
 	background-color: rgba(0, 136, 169, 0.9);
 }
 
-.container {
-	max-width: 1024px;
-	margin-left: 1.5rem;
-	margin-right: 1.5rem;
-}
-
-.grid {
-	display: grid;
-}
-
-.section {
-	padding: 4.5rem 0 2rem;
-}
-
 .section__title {
 	font-size: var(h2-font-size);
 	margin-bottom: 1rem;
@@ -117,9 +103,6 @@ button:hover {
 	color: #2F327D;
 } 
 
-.main {
-	overflow: hidden;
-}
 
 	/*header dan navbar*/
 .header {
@@ -156,28 +139,50 @@ button:hover {
 
 	/*home awal landing page*/
 .home {
-	background: linear-gradient(170deg,
-		rgb(73, 187, 189, 1),
-		rgb(62, 163, 165, 1));
-	display: flex;
-	justify-content: space-between;
-	padding: 0 100px;	
+	position: relative;
 }
 
 .home--container {
-	padding-top: 2rem;
-	row-gap: 3.5rem;
+	background:  #49BBBD;
+	border-radius: 0 0 20% 20% ;
+	display: flex;
+	
+	align-items: center;
+}
+
+.home--bg img {
+	width: 100%;
+	height: auto;
+}
+
+.home--data {
+	width: fit-content;
+	padding-left: 10% ;
+}
+
+.home--button {
+	margin-top: 60px;
+}
+.home--button button {
+	margin: 0;
+	padding: 1.5vw;
+	border-radius: 80px;
+	font-size: 1vw;
+}
+
+
+.home--image img{
+	width: 50vw;
+	height: auto;
+	margin-top: 10%;
 }
 
 .home--title {
 	color: white;
-}
-
-.home--title {
-	font-size: 35px;
-	line-height: 120%;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 2.5vw;
 	margin-bottom: 1.25rem;
-	padding-top: 4rem;
 }
 
 .home--description {
@@ -186,15 +191,18 @@ button:hover {
 
 .home--description {
 	color: white;
-	font-size: 17px;
-}
-.home--container {
-	display: flex;
-	column-gap: 2.5rem;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1vw;
 }
 
 .home {
 	border-radius: 0 0 150px 150px;
+}
+
+.home--button,  .home--title, .home--description {
+	width: fit-content;
+	margin-right: 0;
 }
 
 .maskot {
@@ -206,6 +214,13 @@ button:hover {
 
 .our--success {
 	padding: 50px 100px;
+}
+
+.our--success--container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .our--success--tulisan {
@@ -294,22 +309,24 @@ button:hover {
 
 .judul {
 	justify-content: space-between;
-	padding: 0 100px;
 	margin-bottom: 30px;	
+}
+
+.popular--courese {
+	padding: 10px 10%;
 }
 
 .popular--courese--container {
 	display: flex;
-	padding: 10px 90px;
+	gap: 20px;
 }
 
 .popular--card {
-	width: 190px;
+	width: 350px;
 	background-color: #fff;
 	padding: .4rem .3rem 2rem;
 	border-radius: 1rem;
 	transition: .4s;
-	margin-left: 10px;
 }
 
 .popular--data {
