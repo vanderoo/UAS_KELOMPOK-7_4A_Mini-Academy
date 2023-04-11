@@ -102,9 +102,9 @@ button:hover {
 	font-size: var(small-font-size);
 	color: #2F327D;
 } 
- footer .section  {
+.footer.section  {
     padding: 4.5rem 0 2rem;
-  }
+}
 
 
 	/*header dan navbar*/
