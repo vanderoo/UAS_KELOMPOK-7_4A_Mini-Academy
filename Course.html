@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, width=device-width">
+    <link rel="stylesheet" href="CSS/global.css">
     <link rel="stylesheet" href="CSS/Course.css">
     <link
       rel="stylesheet"
@@ -15,25 +16,22 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
     >
-    <link rel="shortcut icon" type="text/css" href="ASET/ICON/minilogo.ico">
-
-    <title>Course | Mini Academy</title>
+    <title>Course</title>
 </head>
 <body>
     <nav>
-    <header class="header">
-        <img class="logo" src="ASET/GAMBAR/minilogo.png" alt="logo" width="70" height="70">
-        <nav>
-            <ul class="nav__link">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Course.html">Course</a></li>
-            </ul>
-        </nav>
-        <a href=""><button>Logout</button></a>
-        <a class="cta" href="MyCourse.html"><button class="signup">My Course</button></a>
-    </header>
+        <header class="header">
+              <img class="logo" src="ASET/GAMBAR/minilogo.png" alt="logo" width="70" height="70">
+            <nav>
+                <ul class="nav__link">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Course.html">Course</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href="login.html"><button>Login</button></a>
+            <a class="cta" href="register.html"><button class="signup">Sign Up</button></a>
+        </header>
     </nav>
-    <center>
     <div class="container">
         <div class="box">
             <div class="content">
@@ -42,15 +40,19 @@
                 <h1>Why Swift UI Should Be on the Radar of Every Mobile Developer</h1>
 
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde possimus iste, quibusdam exercitationem consectetur sapiente atque asperiores perferendis</p>
+                
+                <a href="#">
+                    <div class="button">
+                        Learning Now
+                    </div>
+                </a>
 
-                <div>
-                    <a href="#"><button>Learning Now!</button></a>
-                </div>
             </div>
             <div class="hero">
                 <img src="ASET/GAMBAR/rectangle-321@2x.png" alt="">
             </div>
         </div>
+
         <div class="lainnya-container">
             <div class="lainnya">
                 <h1>You May Also Like</h1>
@@ -164,7 +166,7 @@
                                 <p>Lina</p>
                             </div>
                             <div class="progres">
-                                <h2 class="harga">Rp. 300.000</h2>
+                                <h2>Rp. 300.000</h2>
                             </div>
                         </div>
                     </div>
@@ -292,9 +294,7 @@
             </div>
         </div>
     </div>
-    </center>    
-</body>
-<footer class="footer section">
+    <footer class="footer section">
         <center>
         <div class="footer--container container grid">
             <div>
@@ -306,5 +306,7 @@
             </div>
         </div>
         </center>
-    </footer>
+    </footer>    
+</body>
+
 </html>
