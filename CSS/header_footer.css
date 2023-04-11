@@ -2,7 +2,6 @@
 
   /*awalan*/
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -75,33 +74,11 @@ button:hover {
   background-color: rgba(0, 136, 169, 0.9);
 }
 
-.container {
-  max-width: 1024px;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-}
-
-.grid {
-  display: grid;
-}
-
 .section {
   padding: 4.5rem 0 2rem;
 }
 
-.main {
-  overflow: hidden;
-}
-
   /*header dan navbar*/
-.header {
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: row;
-  align-items: center;
-  padding: 30px 10%;
-}
-
 .logo{
   margin-right: auto;
     filter: url(#drop-shadow);
