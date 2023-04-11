@@ -1,24 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat:wght@500&display=swap');
 
-:root {
 
-  /*font and typography*/
-  body-font:"montserrat", sans-serif;
-  biggest-font-size:2.25rem;
-  h1-font-size:1.5rem;
-  h2-font-size:1.25rem;
-  h3-font-size:1rem;
-  normal-font-size:.938rem;
-  small-font-size:.813rem;
-  smaller-font-size:.75rem;
-}
-  /*awalan*/
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  text-decoration: none;
 }
-
 html {
   scroll-behavior: smooth;
 }
@@ -29,6 +14,8 @@ body {
   background-color: #FFFFFF;
   color: hsl(227,15%,50%);
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 h1,h2,h3 {
@@ -86,86 +73,92 @@ button:hover {
 .signup:hover {
   background-color: rgba(0, 136, 169, 0.9);
 }
-
-.container {
-  max-width: 1024px;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-}
-
-.grid {
-  display: grid;
-}
-
-.section {
-  padding: 4.5rem 0 2rem;
-}
-
-.section__title {
-  font-size: var(h2-font-size);
-  margin-bottom: 1rem;
-}
-
-.section__title span {
-  color: #2F327D;
-}
-
-.section__subtitle{
-  display: block;
-  font-size: var(small-font-size);
-  color: #2F327D;
-} 
-
-
-.main {
-  overflow: hidden;
-}
-
   /*header dan navbar*/
-.header {
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: row;
-  align-items: center;
-  padding: 30px 10%;
-}
+  .header {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px 10%;
+  }
+  
+  .logo{
+    margin-right: auto;
+      filter: url(#drop-shadow);
+      -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=20, OffY=12, Color='#444')";
+      filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=20, OffY=12, Color='#444')";
+  }
 
-.logo{
-  margin-right: auto;
-    filter: url(#drop-shadow);
-    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=20, OffY=12, Color='#444')";
-    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=20, OffY=12, Color='#444')";
-}
+  nav {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav__link {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav__link li {
+    display: inline-block;
+    padding: 0px 20px;
+  }
+  
+  .nav__link li a{
+    transition: all 0.3s ease 0s;
+  }
+  
+  .nav__link li a:hover{
+    color: #579BB1;
+  }
 
-.nav__link {
-  list-style: none;
-}
+  .section  {
+    padding: 4.5rem 0 2rem;
+  }
+  
+  .footer {
+    background: linear-gradient(170deg,
+      rgb(73, 187, 189, 1),
+      rgb(62, 163, 165, 1));
+      margin-top: 120px;
+  }
+  
+  .footer--container {
+    row-gap: 2.5rem;  
+  }
+  
+  .footer--logo {
+    column-gap: .25rem;
+    margin-bottom: .75rem;
+    width: 200px;
+    height: auto;
+  }
+  
+  .footer--description {
+    margin-bottom: 2rem;
+    font-weight: 200;
+    color: white;
+  }
+  
+  .copyright {
+    color: B2B3CF;
+    margin: 0;
+  }
 
-.nav__link li {
-  display: inline-block;
-  padding: 0px 20px;
-}
 
-.nav__link li a{
-  transition: all 0.3s ease 0s;
-}
-
-.nav__link li a:hover{
-  color: #579BB1;
-}
-
+/*utama*/
 .box{
   background-color: rgba(158, 205, 255, 0.4);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 90px 138px;
-  border-radius: 100px;
 }
 
 .box .content {
   width: 680px;
-  margin-bottom: 20px;
 }
 
 .box .content h3{
@@ -175,21 +168,18 @@ button:hover {
 
 .box .content h3 .aku{
   color: #49BBBD;
-  margin-bottom: 20px;
 }
 
 .box .content h1{
   font-size: 48px;
   line-height: 58px;
   color: #2F327D;
-  margin-bottom: 20px;
 }
 
 .box .content p{
   font-size: 24px;
   line-height: 33px;
   color: #696984;
-  margin-bottom: 20px;
 }
 
 .box .content .button{
@@ -198,27 +188,15 @@ button:hover {
   text-align: center;
   background-color: #49BBBD;
   color: #FFFFFF;
-  padding: 15px 0px;
+  padding: 18px 0px;
   width: 250px;
   border-radius: 20px;
 }
 
 .box .hero img{
   width: 780px;
-  height: 520px;
+  height: auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 .mycourse{
   background-color: rgba(158, 205, 255, 0.4);
@@ -237,7 +215,7 @@ button:hover {
   color: #252641;
 }
 
-.sub-title, a{
+.sub-title{
   font-size: 20px;
   font-weight: 800;
   color: #49BBBD;
@@ -278,12 +256,14 @@ button:hover {
 
 .my-history-card .info{
   display: flex;
+  margin: 20px;
   justify-content: space-between;
   align-items: flex-end;
 }
 
 .my-history-card .info .profile{
   display: flex;
+  margin-top: 40px;
 }
 
 .my-history-card .info .profile img{
@@ -299,13 +279,13 @@ button:hover {
 }
 
 .my-history-card .info .profile .progres{
-  font-size: 10px;
+  font-size: 16px;
   color: rgba(37, 38, 65, 0.6);
   font-weight: 500;
 }
 
 .lainnya-container {
-  padding: 0 200px;
+  padding: 0 120px;
   margin-top: 50px;
 }
 
@@ -325,7 +305,7 @@ button:hover {
 
 .lainnya a {
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 20px;
   
   
@@ -340,12 +320,11 @@ button:hover {
 }
 
 .course-card {
-  height: auto;
+  height: 93%;
   padding: 20px;
   background: #FFFFFF;
   box-shadow: 0px 18.83px 47.08px rgba(47, 50, 125, 0.1);
   border-radius: 20px;
-  margin-bottom: 50px;
   
 }
 
@@ -419,14 +398,20 @@ button:hover {
 }
 
 .course-card .info .profile img{
-  width: 25px;
-  height: 25px;
+  width: 42px;
+  height: 42px;
   margin-right: 10px;
 }
 
 .course-card .info .profile p{
-  font-size: 20px;
+  font-size: 18px;
   color: #252641;
+  font-weight: 500;
+}
+
+.course-card .info .profile .progres{
+  font-size: 16px;
+  color: rgba(37, 38, 65, 0.6);
   font-weight: 500;
 }
 
@@ -439,6 +424,10 @@ button:hover {
     gap: 30px;
   }
 
+  .box {
+    padding: 3vw;
+  }
+
   .hero{
     order: 1;
   }
@@ -448,31 +437,4 @@ button:hover {
     
   }
   
-}
-
-.footer {
-  background: linear-gradient(170deg,
-    rgb(73, 187, 189, 1),
-    rgb(62, 163, 165, 1));
-}
-
-.footer--container {
-  row-gap: 2.5rem;  
-}
-
-.footer--logo {
-  column-gap: .25rem;
-  margin-bottom: .75rem;
-  width: 200px;
-  height: auto;
-}
-
-.footer--description {
-  margin-bottom: 2rem;
-  font-weight: 200;
-  color: white;
-}
-
-.copyright {
-  color: B2B3CF;
 }
