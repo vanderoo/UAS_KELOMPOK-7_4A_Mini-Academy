@@ -407,6 +407,7 @@ button:hover {
 @media screen and (max-width: 900px){
 	.why--mini--academy--card {
 		flex-direction: column;
+		gap: 10px;
 	}
 	.popular--courese--container {
 		flex-direction: column;
