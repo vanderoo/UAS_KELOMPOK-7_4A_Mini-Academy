@@ -1,14 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-
 .banner img{
     width: 100%;
     height: auto;
 }
-
 
 .course{
     display: flex;
@@ -16,7 +9,6 @@
     padding: 0 120px;
     min-height: 1012px;
     gap: 25px;
-    margin-bottom: 50px;
 }
 
 .buy {
@@ -139,6 +131,7 @@
 }
 
 .information .judul {
+    margin-top: 0;
     font-style: normal;
     font-weight: 600;
     font-size: 40px;
@@ -375,12 +368,13 @@
     }
 }
 
-@media screen and (max-width: 991.98px) 
+@media screen and (max-width: 900px) 
 {
 
     .course {
         flex-direction: column;
         align-items: center;
+        padding: 5%;
     }
     .buy {
         position: relative;
@@ -389,7 +383,8 @@
     }
     .information {
         overflow: hidden;
+        width: 100%;
+        margin-top: 0;
     }
-    
-    
+
 }
