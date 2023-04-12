@@ -3,8 +3,8 @@
     padding: 0;
 }
 
+
 .payment-container {
-    margin-top: 30px;
     display: flex;
     justify-content: space-between;
     padding: 0 120px;
@@ -16,7 +16,7 @@
     background: #f8f8f8;
     box-shadow: 0px 18.83px 47.08px rgba(47, 50, 125, 0.1);
     border-radius: 20px;
-    width: 862px;
+    width: 100%;
     margin-bottom: 50px;
 }
 
@@ -24,7 +24,7 @@
     padding: 30px;
     background: #9dccff42;
     border-radius: 20px;
-    width: 602px;
+    width: 100%;
     height: fit-content;
 }
 
@@ -193,7 +193,7 @@ form label {
     color: #9D9B9B;
 }
 
-.confirm-payment {
+.confirm-payment{
     width: 96%;
     padding: 16px 0;
     background: #49BBBD;
@@ -222,4 +222,23 @@ form label {
 
 
     color: #5B5B5B;
+}
+
+@media screen and (max-width: 900px) 
+{
+
+    .payment-container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 10%;
+    }
+    .form-split {
+        flex-direction: column;
+        gap: 0;
+    }
+    .form-split input {
+        width: 90%;
+    }
+
 }
