@@ -153,6 +153,18 @@ button:hover {
     align-items: center;
 }
 
+.button-sign-container {
+  display: flex;
+  gap: 2vw;
+}
+
+.button-sign-container a  {
+  background-color: #49BBBD;
+  color: white;
+  border-radius: 80px;
+  padding: 1vw 2vw;
+}
+
 .profile-container {
     display: flex;
     gap: 15px;
@@ -253,6 +265,7 @@ button:hover {
 }
 
 .profile-menu {
+  z-index: 88;
   position: absolute;
   display: flex;
   flex-direction: column;
