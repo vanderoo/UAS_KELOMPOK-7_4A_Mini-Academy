@@ -15,9 +15,7 @@
 
 	/*awalan*/
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+
 }
 
 html {
@@ -102,10 +100,6 @@ button:hover {
 	font-size: var(small-font-size);
 	color: #2F327D;
 } 
-.footer.section  {
-	margin-top: 40px;
-    padding: 4.5rem 0 2rem;
-}
 
 
 	/*header dan navbar*/
@@ -141,6 +135,10 @@ button:hover {
 	color: #579BB1;
 }
 
+.container {
+	width: 100%;
+}
+
 	/*home awal landing page*/
 .home {
 	position: relative;
@@ -152,6 +150,10 @@ button:hover {
 	display: flex;
 	
 	align-items: center;
+}
+
+.home {
+	padding-top: 0;
 }
 
 .home--bg img {
@@ -241,8 +243,10 @@ button:hover {
 }
 
 .our--success--value {
+	width: 100%;
 	display: flex;
-	column-gap: 14rem;
+	justify-content: center;
+	column-gap: 15vw;
 	padding: 30px 120px;
 }
 
@@ -326,7 +330,7 @@ button:hover {
 }
 
 .popular--card {
-	width: 350px;
+	width: 90%;
 	background-color: #fff;
 	padding: .4rem .3rem 2rem;
 	border-radius: 1rem;
@@ -344,6 +348,7 @@ button:hover {
 }
 
 .popular--card img {
+	width: 100%;
 	border-radius: 1rem;
 }
 
@@ -397,4 +402,17 @@ button:hover {
 
 .copyright {
 	color: B2B3CF;
+}
+
+@media screen and (max-width: 900px){
+	.why--mini--academy--card {
+		flex-direction: column;
+	}
+	.popular--courese--container {
+		flex-direction: column;
+		align-items: center;
+	}
+	.popular--courese .judul {
+		text-align: center;
+	}
 }
