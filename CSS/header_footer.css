@@ -107,6 +107,7 @@ button:hover {
   background: linear-gradient(170deg,
     rgb(73, 187, 189, 1),
     rgb(62, 163, 165, 1));
+    margin-top: 120px;
 }
 
 .footer--container {
@@ -163,6 +164,10 @@ button:hover {
   color: white;
   border-radius: 80px;
   padding: 1vw 2vw;
+}
+
+.button-sign-container a:hover {
+  background-color: rgba(0, 136, 169, 1);
 }
 
 .profile-container {
