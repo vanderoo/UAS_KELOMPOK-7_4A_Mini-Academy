@@ -3,8 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<link rel="stylesheet" href="CSS/header_footer.css">
 	<link rel="stylesheet" type="text/css" href="CSS/main.css">
+
 
 	<link rel="shortcut icon" type="text/css" href="ASET/ICON/minilogo.ico">
 
@@ -13,20 +14,55 @@
 	<title>Mini Academy</title>
 </head>
 <body>
-<nav>
-	<header class="header">
-      	<img class="logo" src="ASET/GAMBAR/minilogo.png" alt="logo" width="70" height="70">
-		<nav>
-    		<ul class="nav__link">
-    			<li><a href="index.html">Home</a></li>
-    			<li><a href="Course.html">Course</a></li>
-    		</ul>
-		</nav>
-		<a class="cta" href="login.html"><button>Login</button></a>
-		<a class="cta" href="register.html"><button class="signup">Sign Up</button></a>
-	</header>
-</nav>
+
 	<div class="main-container">
+		<div class="navbar-container">
+			<div class="logo-container">
+				<img src="ASET/GAMBAR/minilogo.png" alt="logo">
+			</div>
+			<div class="menu-profile-container">
+				<div class="profile-menu">
+					<a href="MyCourse.html">My Course</a>
+					<a href="index.html">Logout</a>
+				</div>
+				<div class="menu-container">
+					<ul class="nav__link">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="Course.html">Course</a></li>
+					</ul>
+				</div>
+				<div class="profile-container">
+
+				</div>
+				<div class="button-sign-container">
+					<a href="login.html">Login</a>
+					<a href="register.html">Sign Up</a>
+				</div>
+				<a href="#" class="tombol-menu hamburger">
+					<span class="garis"></span>
+					<span class="garis"></span>
+					<span class="garis"></span>
+				</a>
+				<div class="navbar-hamburger-container">
+					<a class="back">
+						
+					</a>
+	
+					<div class="sidebar">
+					   <div class="logo-container">
+							<img src="ASET/GAMBAR/minilogo.png" alt="logo">
+					   </div>
+					   <div class="menu-sidebar">
+							<a href="index.html" id="side-home">Home</a>
+							<a href="Course.html" id="side-course">Course</a>
+							<a href="MyCourse.html" id="side-mycourse">My Course</a>
+					   </div>
+					</div>
+	
+				</div>
+			</div>
+		</div>
+
 		<section class="home section" id="home">
 			<div class="home--container container">
 				<div class="home--data">
@@ -191,7 +227,7 @@
 							</div>
 						</article>
 						<div class="see--more">
-							<a href="Course.html">
+							<a href="#">
 								<i class='bx bx-right-arrow-circle'></i>
 								<h3>See All</h3>
 							</a>
@@ -200,6 +236,9 @@
 			</div>
 		</section>
 	</div>
+
+	<script src="JS/navbar.js"></script>
+
 </body>
 	<footer class="footer section">
 		<center>
