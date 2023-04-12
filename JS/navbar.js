@@ -58,6 +58,7 @@ function handleMediaChange(e) {
     } else {
         console.log("not matches");
         sidebar.classList.remove("active");
+        body.style.overflow = 'auto';
     }
 }
 
