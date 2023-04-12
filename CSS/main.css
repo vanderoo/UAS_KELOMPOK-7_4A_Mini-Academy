@@ -278,16 +278,18 @@ button:hover {
 }
 
 .why--mini--academy--card--dalam {
+	display: flex;
+	flex-direction: column;
 	width: 290px;
 	background-color: #fff;
 	padding: .5rem .5rem 1.5rem;
 	border-radius: 1rem;
 	margin: auto;
 	transition: .4s;
+	align-items: center;
 }
 
-.why--mini--academy--card--dalam img {
-	padding: 10px 40px 20px;	
+.why--mini--academy--card--dalam img {	
 }
 
 .why--mini--academy--tulisan--card {
