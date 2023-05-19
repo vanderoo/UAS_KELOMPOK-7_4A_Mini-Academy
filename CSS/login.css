@@ -58,7 +58,8 @@ body {
   line-height: 24px;
   color: #000000;
 }
-.button-container {
+
+.box-form {
   position: relative;
   align-items: center;
   text-align: center;
@@ -72,38 +73,27 @@ body {
   width: 20vw;
 }
 
-.button-container a {
+.box-form a {
   padding: 12px;
   border-radius: 33px;
+  text-decoration: none;
 }
 
-
-.login-container {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  color: #FFFFFF;
-  border: none;
-  width: 100%;
-  border-radius: 33px;
-  background: transparent;
-  cursor: default;
-  z-index: 1;
-}
-
-.btn-bg-l {
+.button-container{
   width: 10vw;
   height: 70%;
   border-radius: 33px;
   position: absolute;
-  left: 10vw;
+  left: 0vw;
   background: #49bbbd ;
   margin: 10px;
   transition: 0.5s;
 }
 
-.register-container {
-  background-color: rgba(73, 187, 189, 0);
+.toggle-btn {
+  padding: 12px 40px;
+  position: relative;
+  text-align: center;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -112,7 +102,6 @@ body {
   width: 100%;
   border-radius: 33px;
   cursor: pointer;
-  z-index: 1;
 }
 
 form {
@@ -128,6 +117,7 @@ form input {
   margin-top: 10px;
   border-radius: 40px;
   background: #fff;
+
 }
 
 .forgot {
@@ -258,13 +248,13 @@ form input {
   .header-login img {
     display: flex;
   }
-  .button-container {
+  .box-form {
     width: 100%;
   }
   .google-button {
     gap: 10px;
   }
-  .btn-bg-l {
+  .button-container {
     width: 50%;
     left: 30vw;
   }
@@ -278,7 +268,7 @@ form input {
     padding: 20px;
   }
 
-  .button-container {
+  .box-form {
     width: 94%;
   }
   
