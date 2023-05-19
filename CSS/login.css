@@ -25,6 +25,7 @@ body {
   display: flex;
   position: relative;
   gap: 10vw;
+  align-items: center;
   
   padding: 80px;
 }
@@ -32,10 +33,11 @@ body {
 /*  */
 .login {
   width: 27vw;
+  box-sizing: border-box;
+  align-items: center;
 }
 .header-login {
   width: 100%;
-  margin-top: 3vw;
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
@@ -49,7 +51,6 @@ body {
   display: none;
 }
 
-
 .header-login p {
   text-align: center;
   font-style: normal;
@@ -60,6 +61,7 @@ body {
 }
 
 .box-form {
+  box-sizing: border-box;
   position: relative;
   align-items: center;
   text-align: center;
@@ -71,6 +73,7 @@ body {
   border-radius: 33px;
   padding: 10px;
   width: 20vw;
+  overflow: hidden;
 }
 
 .box-form a {
@@ -109,7 +112,8 @@ form {
 }
 
 form input {
-  width: 90%;
+  box-sizing: border-box;
+  width: 100%;
   outline: none;
   border: 1px solid #49bbbd;
   padding: 12px 20px;
@@ -117,7 +121,10 @@ form input {
   margin-top: 10px;
   border-radius: 40px;
   background: #fff;
+}
 
+form table {
+  width: 100%;
 }
 
 .forgot {
@@ -126,7 +133,7 @@ form input {
 }
 
 .forgot a {
-  font-style: normal;
+  font-style:normal;
   font-weight: 300;
   font-size: 12px;
   line-height: 18px;
@@ -170,8 +177,8 @@ form input {
 .login-button {
   font-size: 16px;
   margin-top: 1.8rem;
-  border-radius: 20px;
-  padding: 10px 0;
+  border-radius: 40px;
+  padding: 15px 20px;
   outline: none;
   border: none;
   width: 100%;
@@ -214,7 +221,6 @@ form input {
   color: #ACACAC;
 }
 
-
 .gambar {
   position: relative;
 }
@@ -256,10 +262,6 @@ form input {
   }
   .button-container {
     width: 50%;
-    left: 30vw;
-  }
-  form input {
-    width: 94%;
   }
 }
 
@@ -269,11 +271,7 @@ form input {
   }
 
   .box-form {
-    width: 94%;
-  }
-  
-  form input {
-    width: 88%;
+    width: 100%;
   }
 
 }
