@@ -132,6 +132,7 @@ button:hover {
   height: 125px;
 }
 .navbar-container {
+    top: 0;
     width: 80%;
     height: 125px;
     background: transparent;
