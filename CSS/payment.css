@@ -5,6 +5,7 @@
 
 
 .payment-container {
+    position: relative;
     margin-top: 48px;
     display: flex;
     justify-content: space-between;
