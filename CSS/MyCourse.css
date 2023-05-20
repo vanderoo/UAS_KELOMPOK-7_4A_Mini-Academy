@@ -42,7 +42,7 @@ ul {
 
 a {
   font-family: "montserrat", sans-serif;
-  ont-weight: 500;
+  font-weight: 500;
   font-size: 16px;
   color: #2F327D;
   text-decoration: none;
@@ -121,22 +121,7 @@ button:hover {
     filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=20, OffY=12, Color='#444')";
 }
 
-.nav__link {
-  list-style: none;
-}
 
-.nav__link li {
-  display: inline-block;
-  padding: 0px 20px;
-}
-
-.nav__link li a{
-  transition: all 0.3s ease 0s;
-}
-
-.nav__link li a:hover{
-  color: #579BB1;
-}
 
 .box{
   background-color: rgba(158, 205, 255, 0.4);
