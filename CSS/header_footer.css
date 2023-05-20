@@ -164,14 +164,31 @@ button:hover {
 }
 
 .button-sign-container a  {
-  background-color: #49BBBD;
-  color: white;
-  border-radius: 80px;
-  padding: 1vw 2vw;
+  text-align: center;
+  width: 100px;
+  border-radius: 16px;
+  padding: 16px 10px;
 }
 
-.button-sign-container a:hover {
-  background-color: rgba(0, 136, 169, 1);
+.signin-button {
+  background-color: transparent;
+  color: #49BBBD;
+  border: 1px solid #49BBBD;
+}
+.signup-button{
+  background-color: #49BBBD;
+  color: white;
+}
+
+.signin-button:hover {
+  border-color: #46acad;
+  color: #579BB1;
+  transform: scale(1.01);
+}
+
+.signup-button:hover {
+  background-color: #46acad;
+  transform: scale(1.01);
 }
 
 .profile-container {
@@ -333,7 +350,19 @@ button:hover {
     }
 
     .logo-container img {
-        width: 50%;
+        width: 86px;
     }
 
+
+
 }
+
+@media screen and (max-width: 500px){
+  .button-sign-container a{
+    width: 70px;
+    font-size: 12px;
+    padding: 10px 0px;
+    border-radius: 8px;
+  }
+} 
+
