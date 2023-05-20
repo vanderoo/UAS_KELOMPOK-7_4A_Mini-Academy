@@ -206,12 +206,14 @@ button:hover {
 
 .our--success--value-description {
 	font-weight: 600;
+	text-align: center;
 }
 
 .our--success--value {
 	width: 100%;
 	display: flex;
 	justify-content: center;
+	text-align: center;
 	column-gap: 15vw;
 	padding: 30px 120px;
 }
@@ -366,10 +368,13 @@ button:hover {
 }
 
 .copyright {
-	color: B2B3CF;
+	color: #B2B3CF;
 }
 
 @media screen and (max-width: 900px){
+	.our--success--value {
+		box-sizing: border-box;
+	}
 	.why--mini--academy--card {
 		flex-direction: column;
 		gap: 10px;
