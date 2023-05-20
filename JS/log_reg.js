@@ -43,6 +43,8 @@ function logActive(){
 
 if(window.location.hash.slice(1) == "register"){
     regActive();
+}else {
+    logActive();
 }
 
 window.onload = function(){

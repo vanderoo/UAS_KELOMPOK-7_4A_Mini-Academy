@@ -28,7 +28,7 @@ ul {
 
 a {
   font-family: "montserrat", sans-serif;
-  ont-weight: 500;
+  font-weight: 500;
   font-size: 16px;
   color: #2F327D;
   text-decoration: none;
@@ -273,12 +273,12 @@ button:hover {
 }
 
 .profile-menu {
-  z-index: 88;
+  z-index: 888;
   position: absolute;
   display: flex;
   flex-direction: column;
   right: 10%;
-  top: 10%;
+  top: 100px;
   width: 200px;
   height: auto;
   background: rgb(231, 230, 230);

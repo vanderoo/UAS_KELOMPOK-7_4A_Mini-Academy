@@ -1,23 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat:wght@500&display=swap');
 
-:root {
-
-	/*font and typography*/
-	body-font:"montserrat", sans-serif;
-	biggest-font-size:2.25rem;
-	h1-font-size:1.5rem;
-	h2-font-size:1.25rem;
-	h3-font-size:1rem;
-	normal-font-size:.938rem;
-	small-font-size:.813rem;
-	smaller-font-size:.75rem;
-}
-
 	/*awalan*/
-* {
-
-}
-
 html {
 	scroll-behavior: smooth;
 }
@@ -41,7 +24,7 @@ ul {
 
 a {
 	font-family: "montserrat", sans-serif;
-	ont-weight: 500;
+	font-weight: 500;
 	font-size: 16px;
 	color: #2F327D;
 	text-decoration: none;
@@ -116,23 +99,6 @@ button:hover {
     filter: url(#drop-shadow);
     -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=20, OffY=12, Color='#444')";
     filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=20, OffY=12, Color='#444')";
-}
-
-.nav__link {
-	list-style: none;
-}
-
-.nav__link li {
-	display: inline-block;
-	padding: 0px 20px;
-}
-
-.nav__link li a{
-	transition: all 0.3s ease 0s;
-}
-
-.nav__link li a:hover{
-	color: #579BB1;
 }
 
 .container {
@@ -287,9 +253,6 @@ button:hover {
 	margin: auto;
 	transition: .4s;
 	align-items: center;
-}
-
-.why--mini--academy--card--dalam img {	
 }
 
 .why--mini--academy--tulisan--card {
