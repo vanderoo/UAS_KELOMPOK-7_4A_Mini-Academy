@@ -73,8 +73,13 @@
         <div class="course">
             <div class="information">
                 <p class="judul">AWS Certified solutions Architect</p>
+                <div class="menu">
+                    <div class="menu-item active" onclick="showContainer(0)">Information</div>
+                    <div class="menu-item" onclick="showContainer(1)">Syllabus</div>
+                    <div class="menu-item" onclick="showContainer(2)">Submission</div>
+                </div>
                 <div class="detail">
-                    <div class="tentang-bootcamp-container">
+                    <div class="about-container active">
                         <h1 class="detail-title">About Bootcamp</h1>
                         <p>AWS Certified Solutions Architect is a certification provided by Amazon Web Services (AWS) to IT professionals with the ability to design and manage AWS-based cloud solutions. This certification consists of two levels, namely Associate and Professional. For Associate certification, there are two choices, namely AWS Certified Solutions Architect - Associate and AWS Certified Cloud Practitioner. Meanwhile, for Professional certification, only AWS Certified Solutions Architect - Professional is available. Materials to be tested in the certification include an understanding of cloud architecture, selection of the best solutions based on business needs, security, scalability, and availability of AWS services. This certification can help increase the ability and credibility of IT professionals in managing cloud infrastructure on AWS.</p>
                     </div>
@@ -151,6 +156,9 @@
                             </div>
                         </div>
                     </div>
+                    <div class="submission-container">
+
+                    </div>
                 </div>
             </div>
             
@@ -162,34 +170,6 @@
                 </div>
                 <p id="waktu-diskon">11 hour left at this price</p>
                 <a href="payment.html"><button class="button-buy">Buy Now</button></a>
-                <hr>
-                <p class="sub">This Bootcamp included</p>
-
-                <div class="include">
-                    <div class="list">
-                        <img src="ASET/GAMBAR/include1.svg" alt="">
-                        <p>Money Back Guarantee</p>
-                    </div>
-                    <div class="list">
-                        <img src="ASET/GAMBAR/include2.svg" alt="">
-                        <p>Access on all devices</p> 
-                    </div>
-                    <div class="list">
-                        <img src="ASET/GAMBAR/include3.svg" alt="">
-                        <p>Certification of completion</p>
-                    </div>
-                    <div class="list">
-                        <img src="ASET/GAMBAR/include4.svg" alt="">
-                        <p>32 Moduls</p>
-                    </div>
-                </div>
-
-                <hr>
-                <div class="training">
-                    <p class="sub">Training 5 or more people</p>
-                    <p>Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...</p>
-                </div>
-
                 <hr>
                 <div class="share">
                     <p class="sub">Share this bootcamp</p>
@@ -223,7 +203,7 @@
         </center>
     </footer>
 
-    <script src="JS/cdApp.js"></script>
+    <script src="JS/course_detail.js"></script>
     <script src="JS/navbar.js"></script>
 
 </body>

@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.accordion {
+  width: 100%;
+  margin: 0 auto;
+  color: black;
+}
+.accordion-item {
+  border: 1px solid rgba(0, 136, 169, 0.8);
+  margin-bottom: 1px;
+}
+.accordion-header {
+  background-color: #9dccff42;
+  padding: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+  transition: background-color 0.4s ease;
+  color: #252641d7;
+}
+
+.accordion-body {
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+  max-height: 0;
+  background-color: #9dccff42;
+}
+.accordion-item.active .accordion-header {
+  background-color: rgba(0, 135, 169, 0.212);
+  color: #252641;
+}
+.accordion-item.active .accordion-body {
+  max-height: 500px; /* Sesuaikan dengan tinggi maksimum konten */
+  transition: max-height 0.4s ease-in;
+}
+.accordion-header::after {
+  content: '\25B8';
+  position: absolute;
+  right: 1rem;
+  transition: transform 0.4s ease;
+}
+.accordion-item.active .accordion-header::after {
+  transform: rotate(90deg);
+  transition: transform 0.4s ease;
+}
+
+.bank {
+  position: relative;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 10px 30px ;
+  cursor: pointer;
+  border: 1px solid rgba(0, 135, 169, 0.169);
+}
+
+.bank img {
+  width: 56px;
+}
+
+.bank p {
+  font-weight: 600;
+  font-size: 14px;
+  color: #5B5B5B;
+}
+
+
+.checkmark {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  display: none; /* Menghilangkan tanda centang secara default */
+}
+
+.bank.selected .checkmark::before {
+  content: '\2611'; /* Tanda centang: 2714,2713,2611*/
+  font-size: 18px;
+  font-weight: bolder;
+  color: rgba(0, 136, 169, 0.8);;
+}
+
+.bank.selected .checkmark {
+  display: block; /* Menampilkan tanda ceklis saat dipilih */
+}
+
+.bank:hover {
+  background-color: rgba(0, 135, 169, 0.06); /* Warna latar saat dihover */
+}
+  
+  

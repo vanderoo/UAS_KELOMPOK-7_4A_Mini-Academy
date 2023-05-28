@@ -5,15 +5,16 @@
 
 .course{
     display: flex;
+    justify-content: space-between;
     position: relative;
-    padding: 0 120px;
-    min-height: 1012px;
+    padding: 0 10%;
+    min-height: 1100px;
     gap: 25px;
 }
 
 .buy {
     padding: 30px;
-
+    height: fit-content;
     background: #ffffff;
     border-radius: 20px;
     box-shadow: 0 3px 6px 0 rgba(1, 1, 1, 0.2);
@@ -33,14 +34,12 @@
 #harga {
     font-style: normal;
     font-weight: 600;
-    font-size: 45px;
-
-    
+    font-size: 32px;
     color: #000000;
 }
 #diskon {
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 28px;
     color: rgba(0, 0, 0, 0.5);
 }
@@ -84,49 +83,10 @@
     color: #000000;
 }
 
-.include {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
 
-
-
-.list {
-    display: flex;
-    gap: 10px;
-}
-
-.list p {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-
-    color: rgba(0, 0, 0, 0.5);
-}
-
-.list img {
-    width: 20px;
-    height: 23px;
-}
-
-.training p{
-    margin-top: 20px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 25px;
-    /* or 25px */
-    
-    letter-spacing: 0.02em;
-    
-    color: #696984;
-}
-
-    
 
 .information {
+    position: relative;
     margin-top: 40px;
     width: 50vw;
 }
@@ -153,10 +113,39 @@
 }
 
 .detail {
+    position: relative;
     width: 100%;
+    box-sizing: border-box;
+}
+.detail-title {
+    top: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+    color: #49BBBD;
 }
 
-.tentang-bootcamp-container p {
+.menu {
+    display: flex;
+    gap: 30px;
+    background-color: #f8f8f8;
+    padding: 10px
+}
+
+.menu-item {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu-item.active {
+    font-weight: bold;
+}
+
+
+
+.about-container p {
     margin-top: 20px;
     text-align: justify;
     font-style: normal;
@@ -170,14 +159,23 @@
     color: #696984;
 }
 
-.detail-title {
-    margin-top: 40px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 30px;
-    /* identical to box height */
-    color: #49BBBD;
+.about-container,
+.silabus-container,
+.submission-container {
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    
+}
+
+.about-container.active,
+.silabus-container.active,
+.submission-container.active {
+  opacity: 1;
+  visibility: visible;
+  min-height: 500px;
+  height: fit-content;
 }
 
 .silabus-accordion  {
@@ -375,17 +373,25 @@
     .course {
         flex-direction: column;
         align-items: center;
-        padding: 5%;
+        padding: 10%;
     }
+
+    .about-container,
+    .silabus-container,
+    .submission-container {
+        position: relative;
+    }
+    
     .buy {
         position: relative;
+        width: 100%;
         right: 0;
         top: 0;
-    }
+    } 
     .information {
-        overflow: hidden;
         width: 100%;
         margin-top: 0;
     }
+    
 
 }

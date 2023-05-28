@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment | Mini Academy</title>
-    <link rel="stylesheet" href="CSS/header_footer.css">
+
+    <link rel="stylesheet" href="CSS/accordion.css">
     <link rel="stylesheet" href="CSS/payment.css">
+    <link rel="stylesheet" href="CSS/header_footer.css">
+
     <link rel="shortcut icon" type="text/css" href="ASET/ICON/minilogo.ico">
 
 </head>
@@ -68,70 +71,99 @@
         
         <div class="payment-container">
             <div class="form-pembayaran">
-
-                <h2>Checkout</h2>
-                <h4>Card Type</h4>
-                <div class="card-type">
-                    <a href="#"><img src="ASET/GAMBAR/paypal.svg" alt=""></a> 
-                    <a href="#"><img src="ASET/GAMBAR/amex.svg" alt=""></a>  
-                    <a href="#"><img src="ASET/GAMBAR/visa.svg" alt=""></a>  
-                    <a href="#"><img src="ASET/GAMBAR/cc.svg" alt=""></a> 
-                </div>
-
-                <form action="#">
-                    <div class="form-normal">
-                        <label for="input">Name on Card</label>
-                        <input type="text" placeholder="Enter Name on Card">
-                        <label for="input">Card Number</label>
-                        <input type="text" placeholder="Enter Card Number">
-                    </div>
-                    <div class="form-split">
-                        <div class="form-split-vertical">
-                            <label for="input">Expiration Date (MM/YY)</label>
-                            <input type="text" placeholder="Enter Expiration Date">
+                <p class="sum">Metode Pembayaran</p>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(0)">
+                          Bank Transfer
                         </div>
-                        <div class="form-split-vertical">
-                            <label for="input">CVC</label>
-                            <input type="text" placeholder="Enter CVC">
+                        <div class="accordion-body">
+                          <div class="bank" onclick="selectBank(0)">
+                            <img src="/ASET/GAMBAR/payment/bca.svg" alt="logo BCA">
+                            <p>BCA</p>
+                            <span class="checkmark"></span>
+                          </div>
+                          <div class="bank" onclick="selectBank(1)">
+                            <img src="/ASET/GAMBAR/payment/bni.svg" alt="logo BNI">
+                            <p>BNI</p>
+                            <span class="checkmark"></span>
+                          </div>
+                          <div class="bank" onclick="selectBank(2)">
+                            <img src="/ASET/GAMBAR/payment/permata.svg" alt="logo PERMATA">
+                            <p>PERMATA</p>
+                            <span class="checkmark"></span>
+                          </div>
                         </div>
                     </div>
-                </form>
-                <div class="remember">
-                    <input type="checkbox" id="checkbox">
-                    <label for="checkbox">Save my information for faster checkout</label>
                 </div>
-                <div class="confirm-payment-container">
-                    <a href="MyCourse.html" class="confirm-payment">Confirm Payment</a>
-                </div>
-
+                <button type="button" class="btn-bayar" id="submit-bayar">Bayar</button>
             </div>
             <div class="summary">
-                <p id="sum">Summary</p>
-                <div class="courses">
-                    <div class="courses-banner">
-                        <img src="ASET/GAMBAR/buy_banner.svg" alt="">
+                <p class="sum">Summary</p>
+                <div class="list-course">
+                    <div class="courses">
+                        <div class="courses-banner">
+                            <img src="ASET/GAMBAR/buy_banner.svg" alt="">
+                        </div>
+                        <div class="course-info">
+                            <p>AWS Certified solutions Architect</p>
+                            <h3>Rp. 500.000</h3>
+                        </div>
                     </div>
-                    <div class="course-info">
-                        <h4>AWS Certified solutions Architect</h4>
-                        <p>AWS Certified Solutions Architect is...</p>
-                        <h3>Rp. 500.000</h3>
+                    <div class="courses">
+                        <div class="courses-banner">
+                            <img src="ASET/GAMBAR/buy_banner.svg" alt="">
+                        </div>
+                        <div class="course-info">
+                            <p>AWS Certified solutions Architect</p>
+                            <h3>Rp. 500.000</h3>
+                        </div>
+                    </div>
+                    <div class="courses">
+                        <div class="courses-banner">
+                            <img src="ASET/GAMBAR/buy_banner.svg" alt="">
+                        </div>
+                        <div class="course-info">
+                            <p>AWS Certified solutions Architect</p>
+                            <h3>Rp. 500.000</h3>
+                        </div>
+                    </div>
+                    <div class="courses">
+                        <div class="courses-banner">
+                            <img src="ASET/GAMBAR/buy_banner.svg" alt="">
+                        </div>
+                        <div class="course-info">
+                            <p>AWS Certified solutions Architect</p>
+                            <h3>Rp. 500.000</h3>
+                        </div>
+                    </div>
+                    <div class="courses">
+                        <div class="courses-banner">
+                            <img src="ASET/GAMBAR/buy_banner.svg" alt="">
+                        </div>
+                        <div class="course-info">
+                            <p>AWS Certified solutions Architect</p>
+                            <h3>Rp. 500.000</h3>
+                        </div>
                     </div>
                 </div>
-                <div class="sum-payment">
-                    <p>Total Course</p>
-                    <p>1</p>
-                </div>
-                <div class="sum-payment">
-                    <p>Subtotal</p>
-                    <p>Rp. 500.000</p>
-                </div>
-                <div class="sum-payment">
-                    <p>Discount</p>
-                    <p>50%</p>
-                </div>
-                <div class="total">
-                    <p>Total</p>
-                    <p>Rp. 250.000</p>
+                <div class="count-amount">
+                    <div class="sum-payment">
+                        <p>Total Course</p>
+                        <p>1</p>
+                    </div>
+                    <div class="sum-payment">
+                        <p>Subtotal</p>
+                        <p>Rp. 500.000</p>
+                    </div>
+                    <div class="sum-payment">
+                        <p>Discount</p>
+                        <p>50%</p>
+                    </div>
+                    <div class="total">
+                        <p>Total</p>
+                        <p>Rp. 250.000</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -153,6 +185,8 @@
     </footer>
 
     <script src="JS/navbar.js"></script>
+    <script src="JS/payment.js"></script>
+    <script src="JS/accordion.js"></script>
 
 </body>
 </html>
