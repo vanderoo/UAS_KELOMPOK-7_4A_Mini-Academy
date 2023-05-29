@@ -166,7 +166,10 @@
     opacity: 0;
     visibility: hidden;
     height: 0;
-    
+}
+
+.submission-menu {
+    display: none;
 }
 
 .about-container.active,
