@@ -1,215 +1,263 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .payment-container {
-    margin-top: 48px;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 10%;
-    gap: 30px;
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+  gap: 30px;
 }
 
 .form-pembayaran {
-    padding: 50px;
-    background: #9dccff42;
-    border-radius: 20px;
-    width: 100%;
-    height: fit-content;
-    box-sizing: border-box;
+  padding: 50px;
+  background: #9dccff42;
+  border-radius: 20px;
+  width: 100%;
+  height: fit-content;
+  box-sizing: border-box;
 }
 
 .summary {
-    box-sizing: border-box;
-    padding: 30px;
-    background: #9dccff42;
-    border-radius: 20px;
-    width: 100%;
-    height: fit-content;
+  box-sizing: border-box;
+  padding: 30px;
+  background: #9dccff42;
+  border-radius: 20px;
+  width: 100%;
+  height: fit-content;
 }
 
 .courses {
-    padding: 10px 0px;
-    display: flex;
-    gap: 22px;
-    border-bottom:  0.005px solid #5B5B5B;
-    align-items: center;
+  padding: 10px 0px;
+  display: flex;
+  gap: 22px;
+  border-bottom: 0.005px solid #5b5b5b;
+  align-items: center;
 }
 
 .courses-banner {
-    width: 100px;
+  width: 100px;
 }
 
 .courses-banner img {
-    width: 100%;
-    border-radius: 10px;
+  width: 100%;
+  border-radius: 10px;
 }
 
-
 .course-info {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .sum {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 36px;
-    /* identical to box height */
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
 
-
-    color: #252641;
-    margin-bottom: 20px;
+  color: #252641;
+  margin-bottom: 20px;
 }
 
 .list-course {
-    max-height: 450px;
-    overflow: auto;
-    border-top:0.5px solid #5B5B5B ;
-    border-bottom:  0.5px solid #5B5B5B;
+  max-height: 450px;
+  overflow: auto;
+  border-top: 0.5px solid #5b5b5b;
+  border-bottom: 0.5px solid #5b5b5b;
 }
 
 .list-course::-webkit-scrollbar {
-    width: 4px; /* Lebar scroll bar */
-    height: 10px;
-  }
-  
-  .list-course::-webkit-scrollbar-track {
-    background-color: #FFF; /* Warna latar belakang track */
-  }
-  
-  .list-course::-webkit-scrollbar-thumb {
-    background-color: #888; /* Warna thumb scroll bar */
-    border-radius: 3px; /* Bentuk border thumb scroll bar */
-  }
-  
-  .list-course::-webkit-scrollbar-thumb:hover {
-    background-color: #555; /* Warna thumb scroll bar saat dihover */
-  }
+  width: 4px;
+  /* Lebar scroll bar */
+  height: 10px;
+}
+
+.list-course::-webkit-scrollbar-track {
+  background-color: #fff;
+  /* Warna latar belakang track */
+}
+
+.list-course::-webkit-scrollbar-thumb {
+  background-color: #888;
+  /* Warna thumb scroll bar */
+  border-radius: 3px;
+  /* Bentuk border thumb scroll bar */
+}
+
+.list-course::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+  /* Warna thumb scroll bar saat dihover */
+}
 
 .course-info p {
-    font-style: normal;
-    font-weight: 800;
-    font-size: 14px;
-    line-height: 180%;
-    /* or 32px */
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 180%;
+  /* or 32px */
 
-    letter-spacing: 0.02em;
+  letter-spacing: 0.02em;
 
-    color: #5B5B5B;
+  color: #5b5b5b;
 }
 
 .course-info h3 {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 180%;
-    /* or 43px */
-    
-    letter-spacing: 0.02em;
-    
-    color: #000000;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 180%;
+  /* or 43px */
+
+  letter-spacing: 0.02em;
+
+  color: #000000;
 }
 
 .sum-payment {
-    display: flex;
-    justify-content: space-between;
-    border-bottom:  0.5px solid #5B5B5B;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.5px solid #5b5b5b;
 }
 
 .sum-payment p {
-    padding: 10px 0;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 180%;
-    /* identical to box height, or 36px */
+  padding: 10px 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 180%;
+  /* identical to box height, or 36px */
 
-    letter-spacing: 0.02em;
+  letter-spacing: 0.02em;
 
-    color: #5B5B5B;
+  color: #5b5b5b;
 }
 
 .total {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .total p {
-    margin-top: 10px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 180%;
-    /* identical to box height, or 36px */
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 180%;
+  /* identical to box height, or 36px */
 
-    letter-spacing: 0.02em;
+  letter-spacing: 0.02em;
 
-    color: #000000;
+  color: #000000;
 }
 
-
 .btn-bayar {
-    margin: 0;
-    margin-top: 30px;
-    padding: auto;
-    border-radius: 0;
-    width: 100%;
+  margin: 0;
+  margin-top: 30px;
+  padding: auto;
+  border-radius: 0;
+  width: 100%;
 }
 
 #submit-bayar {
-    display: grid;
-    place-content: center;
-    height: 50px;
-    border-radius: 10px;
+  display: grid;
+  place-content: center;
+  height: 50px;
+  border-radius: 10px;
 }
 
 button:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-    /* Atur properti lain sesuai kebutuhan */;
+  opacity: 0.5;
+  cursor: not-allowed;
+  /* Atur properti lain sesuai kebutuhan */
 }
-  
 
 .loader {
-    pointer-events: none;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color:#fff ;
-    animation: an1 1s ease infinite;
+  pointer-events: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #fff;
+  animation: an1 1s ease infinite;
+}
 
+/*   Accordion    */
+
+.bank {
+  position: relative;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 10px 30px;
+  cursor: pointer;
+  border: 1px solid rgba(0, 135, 169, 0.169);
+}
+
+.bank img {
+  width: 56px;
+}
+
+.bank p {
+  font-weight: 600;
+  font-size: 14px;
+  color: #5b5b5b;
+}
+
+.checkmark {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  display: none;
+  /* Menghilangkan tanda centang secara default */
+}
+
+.bank.selected .checkmark::before {
+  content: "\2611";
+  /* Tanda centang: 2714,2713,2611*/
+  font-size: 18px;
+  font-weight: bolder;
+  color: rgba(0, 136, 169, 0.8);
+}
+
+.bank.selected .checkmark {
+  display: block;
+  /* Menampilkan tanda ceklis saat dipilih */
+}
+
+.bank:hover {
+  background-color: rgba(0, 135, 169, 0.06);
+  /* Warna latar saat dihover */
 }
 
 .accordion-item {
-    overflow: hidden;
-    border-radius: 10px;
+  overflow: hidden;
+  border-radius: 10px;
 }
+
+/*   Accordion   */
 
 @keyframes an1 {
-    0% {
-        transform: rotate(0turn);
-    }
-    100% {
-        transform: rotate(1turn);
-    }
-    
+  0% {
+    transform: rotate(0turn);
+  }
+
+  100% {
+    transform: rotate(1turn);
+  }
 }
 
-
-
-@media screen and (max-width: 900px) 
-{
-
-    .payment-container {
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-    }
-
+@media screen and (max-width: 900px) {
+  .payment-container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
 }

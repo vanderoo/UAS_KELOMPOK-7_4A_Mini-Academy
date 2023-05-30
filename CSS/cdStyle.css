@@ -178,6 +178,7 @@
   height: fit-content;
 }
 
+/* SILABUS ACCORDION */
 .silabus-accordion {
   max-width: 100%;
   margin-top: 20px;
@@ -219,6 +220,14 @@
   max-height: 300px;
   animation: fade 1s ease-in-out;
 }
+
+.silabs-desc {
+  padding: 10px 15px;
+}
+.accordion-item.active .accordion-body {
+  animation: fade 1s ease-in-out;
+}
+/*SILABUS ACCORDION*/
 
 .lainnya-container {
   padding: 0 120px;
@@ -382,7 +391,7 @@
     width: 90%;
     right: 0;
     top: 0;
-    margin-top: -80px;
+    margin-top: 0;
   }
   .information {
     width: 100%;

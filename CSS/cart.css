@@ -1,0 +1,80 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.main-container {
+    min-height: 50%;
+    justify-content: center;
+}
+
+.cart-container {
+    padding: 40px 10%;
+}
+
+.cart-container-cc  {
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+}
+
+.course-container {
+    width: 100%;
+    max-width: 1000px;
+    min-height: 100px;
+    background-color: rgb(185, 211, 219);
+}
+
+.checkout-container {
+    width: 100%;
+    max-width: 350px;
+    min-width: 350px;
+}
+
+.checkout {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(196, 191, 191);
+}
+.checkout h1 {
+    color: rgb(40, 40, 40);
+    font-weight: 600;
+}
+
+.checkout .btn-co {
+    margin-left: 0;
+    border-radius: 0;
+    width: 100%;
+    padding: 15px 0px;
+}
+
+.payment-method img {
+    width: 60px;
+}
+
+@media screen and (max-width: 900px) {
+    .cart-container-cc {
+        flex-direction: column-reverse;
+    }
+
+    .checkout-container,.course-container {
+        max-width: none;
+    }
+    #cart-page {
+        display: none;
+    }
+    .payment-method img {
+        width: 75px;
+    }
+}
