@@ -39,7 +39,7 @@ function logActive(){
     logBtn.classList.add("active");
     btn.style.left = '0';
 
-    regForm.forEach( (item)=> {
+    regForm.forEach( (item) => {
         item.style.display = 'none';
     }); 
     
