@@ -1,6 +1,6 @@
 const logBtn = document.querySelector("#log-btn");
 const regBtn = document.querySelector("#reg-btn");
-const regForm = document.querySelector(".register-form");
+const regForm = document.querySelectorAll(".register-form");
 const logForm = document.querySelector(".remember-forgot");
 const buttonLogin = document.querySelector(".login-button");
 const googleButton = document.querySelector(".google-button p");
@@ -23,7 +23,11 @@ function regActive(){
     regBtn.classList.add("active");
     logBtn.classList.remove("active");
     btn.style.left = `${ubahLebar()}px`;
-    regForm.style.display = 'inline';
+
+    regForm.forEach( (item)=> {
+        item.style.display = 'block';
+    }); 
+
     logForm.style.display = 'none';
     gambar.src ='ASET/GAMBAR/banner-register.svg' ;
     buttonLogin.textContent = "Register";
@@ -34,7 +38,11 @@ function logActive(){
     regBtn.classList.remove("active");
     logBtn.classList.add("active");
     btn.style.left = '0';
-    regForm.style.display = 'none';
+
+    regForm.forEach( (item)=> {
+        item.style.display = 'none';
+    }); 
+    
     logForm.style.display = 'flex';
     gambar.src ='ASET/GAMBAR/banner-login.svg' ;
     buttonLogin.textContent = "Login";
