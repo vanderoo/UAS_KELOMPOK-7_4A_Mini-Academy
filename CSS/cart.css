@@ -20,6 +20,12 @@ body {
     padding: 40px 10%;
 }
 
+#cart-page-title {
+    color:black;
+    font-weight: 1000;
+    margin-bottom: 40px;
+}
+
 .cart-container-cc  {
     display: flex;
     gap: 25px;
@@ -27,11 +33,54 @@ body {
 }
 
 .course-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     width: 100%;
     max-width: 1000px;
     min-height: 100px;
-    background-color: rgb(185, 211, 219);
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+   /* background-color: rgb(185, 211, 219); */
 }
+
+.cart-item {
+    display: flex;
+    gap: 30px;
+    padding-top: 10px;
+    border-top: 1px solid gray;
+}
+
+.course-banner {
+    width: 160px;
+}
+
+.course-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#course-title {
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+}
+#instructor-name {
+    flex: 1;
+}
+#course-amount {
+    font-size: 1.2rem;
+}
+
+#delete-course {
+    color: rgba(0, 136, 169, 0.8);
+    font-weight: 100;
+}
+
+
+
 
 .checkout-container {
     width: 100%;
@@ -51,6 +100,10 @@ body {
     color: rgb(40, 40, 40);
     font-weight: 600;
 }
+.checkout h3 {
+    color: gray;
+    font-weight: 600;
+}
 
 .checkout .btn-co {
     margin-left: 0;
@@ -59,22 +112,32 @@ body {
     padding: 15px 0px;
 }
 
+#accept-method {
+    margin-top: 10px;
+}
 .payment-method img {
     width: 60px;
 }
 
 @media screen and (max-width: 900px) {
+    #cart-page-title {
+        display: none;
+    }
     .cart-container-cc {
         flex-direction: column-reverse;
     }
 
     .checkout-container,.course-container {
         max-width: none;
-    }
-    #cart-page {
-        display: none;
+        min-width: 0;
     }
     .payment-method img {
         width: 75px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .payment-method img {
+        width: 70px;
     }
 }
