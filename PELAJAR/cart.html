@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../CSS/header_footer.css" />
+    <link rel="stylesheet" href="../CSS/cart.css" />
+
+    <link rel="shortcut icon" type="text/css" href="../ASET/ICON/minilogo.ico" />
+    <title>Cart | Mini Academy</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <img src="../ASET/GAMBAR/minilogo.png" alt="logo" />
+            </div>
+            <div class="menu-profile-container">
+                <div class="profile-menu">
+                    <a href="MyCourse.html">My Course</a>
+                    <a href="../index.html">Logout</a>
+                </div>
+                <div class="menu-container">
+                    <ul class="nav__link">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="Course.html">Course</a></li>
+                    </ul>
+                </div>
+                <div class="cart-menu">
+                    <a href="cart.html"><img id="cart-img" src="../ASET/GAMBAR/Cart/cart.svg" alt=""></a>
+                </div>
+                <a href="#" onclick="event.preventDefault()" class="profile-container">
+                    <div class="profile-picture">
+                        <img src="../ASET/GAMBAR/profilePict.svg" alt="" />
+                    </div>
+                    <div class="profile">
+                        <p>Lina</p>
+                        <img id="arrow-profile" src="../ASET/GAMBAR/arrow.svg" alt="" />
+                    </div>
+                </a>
+                <a href="#" onclick="event.preventDefault()" class="tombol-menu hamburger">
+                    <span class="garis"></span>
+                    <span class="garis"></span>
+                    <span class="garis"></span>
+                </a>
+            </div>
+        </div>
+        <div class="navbar-hamburger-container">
+            <a class="back"> </a>
+
+            <div class="sidebar">
+                <div class="logo-container">
+                    <img src="../ASET/GAMBAR/minilogo.png" alt="logo" />
+                </div>
+                <div class="menu-sidebar">
+                    <a href="../index.html" id="side-home">Home</a>
+                    <a href="Course.html" id="side-course">Course</a>
+                    <a href="MyCourse.html" id="side-mycourse">My Course</a>
+                    <a href="../index.html" id="side-home">Logout</a>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-height"></div>
+
+
+        <div class="cart-container">
+            <h1 id="cart-page-title">Courses Cart</h1>
+            <div class="cart-container-cc">
+                <div class="course-container">
+                    <div class="cart-item">
+                        <div class="course-banner">
+                            <img src="../ASET/GAMBAR/buy_banner.svg" alt="" />
+                        </div>
+                        <div class="course-info">
+                            <h3 id="course-title">AWS Certified solutions Architect</h3>
+                            <p id="instructor-name">Oleh Tatang Suratang</p>
+                            <h4 id="course-amount">Rp.150.000</h4>
+                        </div>
+                        <a href="" id="delete-course">Hapus</a>
+                    </div>
+                    <div class="cart-item">
+                        <div class="course-banner">
+                            <img src="../ASET/GAMBAR/buy_banner.svg" alt="" />
+                        </div>
+                        <div class="course-info">
+                            <h3 id="course-title">AWS Certified solutions Architect</h3>
+                            <p id="instructor-name">Oleh Tatang Suratang</p>
+                            <h4 id="course-amount">Rp.150.000</h4>
+                        </div>
+                        <a href="" id="delete-course">Hapus</a>
+                    </div>
+                </div>
+
+                <div class="checkout-container">
+                    <div class="checkout">
+                        <h3>Total:</h3>
+                        <h1>Rp.300.000</h1>
+                        <button type="button" class="btn-co">Checkout</button>
+                    </div>
+                    <h4 id="accept-method">We Accept:</h4>
+                    <div class="payment-method">
+                        <img src="../ASET/GAMBAR/payment/bca.svg" alt="">
+                        <img src="../ASET/GAMBAR/payment/bni.svg" alt="">
+                        <img src="../ASET/GAMBAR/payment/mandiri.svg" alt="">
+                        <img src="../ASET/GAMBAR/payment/permata.svg" alt="">
+                        <img src="../ASET/GAMBAR/payment/gopay.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <footer class="footer section">
+        <center>
+            <div class="footer--container container grid">
+                <div>
+                    <img src="../ASET/GAMBAR/logofooter.png" class="footer--logo" />
+                    <p class="footer--description">
+                        "Unlock your potential with our academy's courses today."
+                    </p>
+                    <p class="copyright">@2023 Team Seven</p>
+                </div>
+            </div>
+        </center>
+    </footer>
+
+    <script src="../JS/navbar.js"></script>
+
+</body>
+
+</html>

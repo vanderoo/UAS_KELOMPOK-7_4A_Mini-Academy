@@ -1,0 +1,143 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.main-container {
+    min-height: 50%;
+    justify-content: center;
+}
+
+.cart-container {
+    padding: 40px 10%;
+}
+
+#cart-page-title {
+    color:black;
+    font-weight: 1000;
+    margin-bottom: 40px;
+}
+
+.cart-container-cc  {
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+}
+
+.course-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 100px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+   /* background-color: rgb(185, 211, 219); */
+}
+
+.cart-item {
+    display: flex;
+    gap: 30px;
+    padding-top: 10px;
+    border-top: 1px solid gray;
+}
+
+.course-banner {
+    width: 160px;
+}
+
+.course-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#course-title {
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+}
+#instructor-name {
+    flex: 1;
+}
+#course-amount {
+    font-size: 1.2rem;
+}
+
+#delete-course {
+    color: rgba(0, 136, 169, 0.8);
+    font-weight: 100;
+}
+
+
+
+
+.checkout-container {
+    width: 100%;
+    max-width: 350px;
+    min-width: 350px;
+}
+
+.checkout {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(196, 191, 191);
+}
+.checkout h1 {
+    color: rgb(40, 40, 40);
+    font-weight: 600;
+}
+.checkout h3 {
+    color: gray;
+    font-weight: 600;
+}
+
+.checkout .btn-co {
+    margin-left: 0;
+    border-radius: 0;
+    width: 100%;
+    padding: 15px 0px;
+}
+
+#accept-method {
+    margin-top: 10px;
+}
+.payment-method img {
+    width: 60px;
+}
+
+@media screen and (max-width: 900px) {
+    #cart-page-title {
+        display: none;
+    }
+    .cart-container-cc {
+        flex-direction: column-reverse;
+    }
+
+    .checkout-container,.course-container {
+        max-width: none;
+        min-width: 0;
+    }
+    .payment-method img {
+        width: 75px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .payment-method img {
+        width: 70px;
+    }
+}
