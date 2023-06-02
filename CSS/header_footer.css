@@ -293,6 +293,13 @@ button:hover {
 #cart-img {
   width: 36px;
   cursor: pointer;
+  stroke: blue;
+}
+
+#cart-img:hover {
+  fill: cadetblue;
+  stroke: blue;
+  transform: rotate(3deg);
 }
 
 .profile-menu {
