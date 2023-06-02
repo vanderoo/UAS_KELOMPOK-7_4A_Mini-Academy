@@ -1,1 +1,76 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat:wght@500&display=swap");
+
+.content {
+  min-height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table,
+td {
+  padding: 4px;
+}
+
+.table {
+  width: 1130px;
+  height: 780px;
+  background-color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 7px rgba(0, 0, 0, 0.12);
+  border-radius: 20px;
+  overflow: hidden;
+  position: center;
+  margin-top: 50px;
+}
+
+.table_header {
+  width: 100%;
+  height: 40px;
+  background-color: #49bbbd;
+  padding: 1rem 1rem;
+}
+
+.judul h1 {
+  color: white;
+  font-style: normal;
+  font-weight: 600;
+  margin-top: -0;
+  padding: 10px;
+}
+.table_body {
+  width: 95%;
+  max-height: 90%;
+  margin: 0.8rem auto;
+}
+
+form input {
+  width: 1050px;
+  height: 44px;
+
+  background: #f8f8f8;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1;
+  padding: 10px;
+}
+
+form select {
+  width: 1050px;
+  height: 44px;
+  background: #f8f8f8;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1;
+}
+
+.submit input {
+  font-family: "montserrat", sans-serif;
+  background-color: #49bbbd;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 515px;
+  margin-top: 15px;
+}
