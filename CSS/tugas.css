@@ -14,7 +14,7 @@ td {
 
 .table {
   width: 1130px;
-  height: 700px;
+  height: 360px;
   background-color: white;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 7px rgba(0, 0, 0, 0.12);
   border-radius: 20px;
@@ -41,6 +41,23 @@ td {
   width: 95%;
   max-height: 90%;
   margin: 0.8rem auto;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  background-color: #f8f8f8;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.menu-item {
+  cursor: pointer;
+  padding: 4px;
+}
+
+.menu-item.active {
+  font-weight: bold;
 }
 
 form input {
