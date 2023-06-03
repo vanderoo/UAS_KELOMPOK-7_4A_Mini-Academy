@@ -14,16 +14,26 @@ td {
 
 .table {
   width: 1130px;
-  height: 400px;
+  height: 505px;
   background-color: white;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 7px rgba(0, 0, 0, 0.12);
   border-radius: 20px;
   overflow-y: hidden;
   overflow-x: hidden;
   position: center;
-  margin-top: 50px;
+  margin-top: 40px;
   table-layout: fixed;
   border-collapse: collapse;
+}
+
+.daftar_tugas .list_tugas {
+  width: 1075px;
+}
+
+.td_button {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #dddddd;
 }
 
 .table_header {
@@ -46,12 +56,36 @@ td {
   margin-left: 630px;
 }
 
-.table_body {
+.daftar_tugas .table_body {
   width: 95%;
   max-height: 90%;
   margin: 0.8rem auto;
   overflow-y: auto;
   overflow-x: hidden;
+}
+
+.table_body {
+  width: 95%;
+  max-height: 90%;
+  margin: 0.8rem auto;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  background-color: #f8f8f8;
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.menu-item {
+  cursor: pointer;
+  padding: 4px;
+}
+
+.menu-item.active {
+  font-weight: bold;
 }
 
 form input {
@@ -98,15 +132,12 @@ form select {
 }
 
 tbody button {
-  background-color: transparent;
   margin-left: 0;
-  padding: 1rem 1rem;
+  background-color: #49bbbd;
 }
 
 tbody button:hover {
-  background-color: transparent;
   margin-left: 0;
-  transform: translate(0px, -1.5px);
 }
 
 tbody button img {
@@ -123,14 +154,6 @@ thead th {
   top: 0;
   background-color: #f8f8f8;
 }
-
-th,
-td {
-  border-bottom: 1px solid #dddddd;
-  padding: 10px 20px;
-  text-align: center;
-}
-
 tbody tr {
   color: hsl(227, 15%, 60%);
 }
