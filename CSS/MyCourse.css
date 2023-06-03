@@ -4,8 +4,7 @@
 .box {
   background-color: rgba(158, 205, 255, 0.4);
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  padding: 20px 10%;
 }
 
 .box .content {
@@ -45,18 +44,24 @@
   border-radius: 20px;
 }
 
+.lainnya-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10%;
+}
+
 .judul-course {
   margin-top: 20px;
-  padding: 0 10%;
 }
 
 .list-course {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  justify-content: left;
+  align-items: stretch;
+  justify-content: left;
+  gap: 30px;
 }
 
 .info-course {
@@ -86,8 +91,7 @@
 }
 
 .course-card {
-  width: 20%;
-  margin: 15px;
+ /* flex: 0 0 calc(20% - 30px); */
   box-sizing: border-box;
   float: left;
   text-align: center;
@@ -97,7 +101,9 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 7px rgba(0, 0, 0, 0.12);
   transition: 0.4s;
   background: white;
-  flex-basis: calc(100% / 5);
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(25% - 22.5px);
 }
 
 .course-card:hover {
@@ -120,12 +126,6 @@
   font-size: 12px;
 }
 
-.course-card h1 {
-  text-align: center;
-  margin: 0;
-  font-size: 21px;
-}
-
 .course-card h2 {
   text-align: center;
   padding: 15px;
@@ -137,6 +137,14 @@
 
 .info-course-deskripsi {
   padding: 0px 13px 10px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.info-course-deskripsi h1 {
+  text-align: center;
+  margin: 0;
+  font-size: 21px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -144,7 +152,7 @@
     width: 45%;
   }
   .course-card {
-    flex-basis: calc(100% / 4);
+    flex-basis: calc(33.33% - 20px);
   }
   .course-card .gambar-utama img {
     width: auto;
@@ -152,13 +160,13 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .content {
     width: 100%;
   }
 
   .course-card {
-    flex-basis: calc(100% / 3);
+    flex-basis: calc(50% - 15px);
   }
   .course-card .gambar-utama img {
     width: auto;
@@ -172,7 +180,7 @@
   }
 
   .course-card {
-    flex-basis: 75%;
+    flex-basis: 100%;
   }
 
   .course-card .gambar-utama img {
