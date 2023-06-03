@@ -88,6 +88,15 @@ td {
   font-weight: bold;
 }
 
+.tambah_tugas, 
+.daftar_tugas {
+  display: none;
+}
+.tambah_tugas.active, 
+.daftar_tugas.active {
+  display: block;
+}
+
 form input {
   width: 1050px;
   height: 44px;
