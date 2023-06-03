@@ -28,13 +28,18 @@ td {
   height: 40px;
   background-color: #49bbbd;
   padding: 1rem 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.cari {
+  margin-left: 650px;
 }
 
 .judul h1 {
   color: white;
   font-style: normal;
   font-weight: 600;
-  margin-top: -0;
   padding: 10px;
 }
 .table_body {
