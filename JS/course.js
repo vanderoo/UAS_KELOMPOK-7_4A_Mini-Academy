@@ -6,7 +6,7 @@ const listCourse = document.querySelector('.list-course');
 
 // Fetch data course dari REST API
 function addCourses(){
-  fetch('http://127.0.0.1:3333/course/course')
+  fetch('https://9d46-103-147-9-240.ngrok-free.app/course/course')
     .then(response => response.json())
     .then(courses => {
       // Loop melalui setiap course
