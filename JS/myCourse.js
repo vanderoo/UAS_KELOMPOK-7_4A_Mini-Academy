@@ -7,9 +7,9 @@ const notRegisteredCourses = document.getElementById('notRegistered');
 const myCourses = document.getElementById('myCourse');
 
 const urls = {
-  myCourse: 'https://9d46-103-147-9-240.ngrok-free.app/course/myCourse',
-  notRegistered: 'https://9d46-103-147-9-240.ngrok-free.app/course/notRegistered',
-  waitingPayment: 'https://9d46-103-147-9-240.ngrok-free.app/course/waitingPayment'
+  myCourse: 'http://54.179.211.33:3333/course/myCourse',
+  notRegistered: 'http://54.179.211.33:3333/course/notRegistered',
+  waitingPayment: 'http://54.179.211.33:3333/course/waitingPayment'
 }
 
 // Fetch data course dari REST API
