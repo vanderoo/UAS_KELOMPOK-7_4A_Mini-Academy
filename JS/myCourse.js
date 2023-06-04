@@ -7,9 +7,9 @@ const notRegisteredCourses = document.getElementById('notRegistered');
 const myCourses = document.getElementById('myCourse');
 
 const urls = {
-  myCourse: '54.179.211.33:5000/course/myCourse',
-  notRegistered: '54.179.211.33:5000/course/notRegistered',
-  waitingPayment: '54.179.211.33:5000/course/waitingPayment'
+  myCourse: 'http://54.179.211.33:3333/course/myCourse',
+  notRegistered: 'http://54.179.211.33:3333/course/notRegistered',
+  waitingPayment: 'http://54.179.211.33:3333/course/waitingPayment'
 }
 
 // Fetch data course dari REST API
