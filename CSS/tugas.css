@@ -26,10 +26,6 @@ td {
   border-collapse: collapse;
 }
 
-.daftar_tugas .list_tugas {
-  width: 1075px;
-}
-
 .td_button {
   display: flex;
   justify-content: space-between;
@@ -53,13 +49,13 @@ td {
 }
 
 .cari {
-  margin-left: 630px;
+  margin-left: 680px;
 }
 
-.daftar_tugas .table_body {
-  width: 95%;
+.list_tugas {
+  width: 100%;
   max-height: 90%;
-  margin: 0.8rem auto;
+
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -88,11 +84,11 @@ td {
   font-weight: bold;
 }
 
-.tambah_tugas, 
+.tambah_tugas,
 .daftar_tugas {
   display: none;
 }
-.tambah_tugas.active, 
+.tambah_tugas.active,
 .daftar_tugas.active {
   display: block;
 }

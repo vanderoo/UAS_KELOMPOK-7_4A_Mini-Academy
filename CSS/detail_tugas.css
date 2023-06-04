@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat:wght@500&display=swap");
+
+.content {
+  min-height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table,
+td {
+  padding: 4px;
+}
+
+.table {
+  width: 1130px;
+  height: 505px;
+  background-color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 7px rgba(0, 0, 0, 0.12);
+  border-radius: 20px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  position: center;
+  margin-top: 40px;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.action button {
+  margin-left: 10px;
+}
+
+.action input {
+  width: 120px;
+}
+
+.action button:hover {
+  margin-left: 10px;
+}
+
+.td_button {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #dddddd;
+}
+
+.table_header {
+  width: 100%;
+  height: 40px;
+  background-color: #49bbbd;
+  padding: 1rem 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.judul h1 {
+  color: white;
+  font-style: normal;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.cari {
+  margin-left: 770px;
+}
+
+.list_tugas {
+  width: 100%;
+  max-height: 90%;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.table_body {
+  width: 95%;
+  max-height: 90%;
+  margin: 0.8rem auto;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  background-color: #f8f8f8;
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.menu-item {
+  cursor: pointer;
+  padding: 4px;
+}
+
+.menu-item.active {
+  font-weight: bold;
+}
+
+.tambah_tugas,
+.daftar_tugas {
+  display: none;
+}
+.tambah_tugas.active,
+.daftar_tugas.active {
+  display: block;
+}
+
+form input {
+  width: 1050px;
+  height: 44px;
+
+  background: #f8f8f8;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1;
+  padding: 10px;
+}
+
+input {
+  width: 200px;
+  height: 34px;
+
+  background: #f8f8f8;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1;
+  padding: 10px;
+}
+
+form select {
+  width: 1050px;
+  height: 44px;
+  background: #f8f8f8;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1;
+}
+
+.submit input {
+  font-family: "montserrat", sans-serif;
+  background-color: #49bbbd;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 515px;
+  margin-top: 15px;
+}
+
+tbody button {
+  margin-left: 0;
+  background-color: #49bbbd;
+}
+
+tbody button:hover {
+  margin-left: 0;
+}
+
+tbody button img {
+  width: 35px;
+  height: auto;
+}
+
+.action {
+  display: flex;
+}
+
+thead th {
+  position: sticky;
+  top: 0;
+  background-color: #f8f8f8;
+}
+tbody tr {
+  color: hsl(227, 15%, 60%);
+}
+
+tbody tr:hover {
+  color: hsl(227, 15%, 45%);
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
