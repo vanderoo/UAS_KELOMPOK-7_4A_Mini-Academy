@@ -33,7 +33,15 @@ td {
 }
 
 .cari {
-  margin-left: 650px;
+  margin-left: 700px;
+}
+
+.cari button {
+  background-color: transparent;
+}
+.cari img {
+  width: 40px;
+  height: auto;
 }
 
 .judul h1 {
