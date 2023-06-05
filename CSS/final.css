@@ -18,9 +18,13 @@ td {
   text-align: center;
 }
 
+table {
+  padding-bottom: 50px;
+}
+
 .table {
   width: 1130px;
-  height: 405px;
+  height: 390px;
   background-color: white;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 7px rgba(0, 0, 0, 0.12);
   border-radius: 20px;
