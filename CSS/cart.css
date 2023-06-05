@@ -13,12 +13,7 @@ body {
 }
 
 .main-container {
-<<<<<<< HEAD
-  min-height: 50%;
-  justify-content: center;
-=======
-    flex: 1;
->>>>>>> ce82e2d6be9984462fe40c6e4c3c739fe875cf66
+  flex: 1;
 }
 
 .cart-container {
