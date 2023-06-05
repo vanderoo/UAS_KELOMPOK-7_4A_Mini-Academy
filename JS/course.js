@@ -6,7 +6,7 @@ const listCourse = document.querySelector('.list-course');
 
 // Fetch data course dari REST API
 function addCourses(){
-  fetch('http://54.179.211.33:3333/course/course')
+  fetch('http://54.179.23.24:3333/course/course')
     .then(response => response.json())
     .then(courses => {
       // Loop melalui setiap course
@@ -44,7 +44,7 @@ function addCourses(){
       });
     })
     .catch(error => {
-      console.error('Error:', error);
+      console.error('Error:', error.message);
     });
 }
 
