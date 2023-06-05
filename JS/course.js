@@ -6,7 +6,7 @@ const listCourse = document.querySelector('.list-course');
 
 // Fetch data course dari REST API
 function addCourses(){
-  fetch('http://54.179.23.24:3333/course/course')
+  fetch('https://mini-alb-436703962.ap-southeast-1.elb.amazonaws.com/course/course')
     .then(response => response.json())
     .then(courses => {
       // Loop melalui setiap course
