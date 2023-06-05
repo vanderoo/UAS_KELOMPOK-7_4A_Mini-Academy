@@ -58,7 +58,6 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: left;
   align-items: stretch;
   justify-content: left;
   gap: 30px;
@@ -141,6 +140,7 @@
   flex-direction: column;
   height: 100%;
 }
+
 .info-course-deskripsi h1 {
   text-align: center;
   margin: 0;
