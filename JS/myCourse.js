@@ -7,9 +7,9 @@ const notRegisteredCourses = document.getElementById('notRegistered');
 const myCourses = document.getElementById('myCourse');
 
 const urls = {
-  myCourse: 'http://54.179.211.33:3333/course/myCourse',
-  notRegistered: 'http://54.179.211.33:3333/course/notRegistered',
-  waitingPayment: 'http://54.179.211.33:3333/course/waitingPayment'
+  myCourse: 'http://mini-alb-436703962.ap-southeast-1.elb.amazonaws.com/course/myCourse',
+  notRegistered: 'http://mini-alb-436703962.ap-southeast-1.elb.amazonaws.com/course/notRegistered',
+  waitingPayment: 'http://mini-alb-436703962.ap-southeast-1.elb.amazonaws.com/course/waitingPayment'
 }
 
 // Fetch data course dari REST API
@@ -58,8 +58,6 @@ function addCourses(container){
     });
 }
 addCourses(myCourses);
-addCourses(waitingPaymentCourses);
-addCourses(waitingPaymentCourses);
 addCourses(waitingPaymentCourses);
 addCourses(notRegisteredCourses);
 
