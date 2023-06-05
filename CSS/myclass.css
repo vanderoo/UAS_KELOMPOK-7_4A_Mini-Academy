@@ -12,6 +12,10 @@ td {
   padding: 4px;
 }
 
+table {
+  padding-bottom: 50px;
+}
+
 .table {
   width: 1130px;
   height: 400px;
