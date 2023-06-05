@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat:wght@500&display=swap");
 
-  /*awalan*/
-
+/*awalan*/
 
 html {
   scroll-behavior: smooth;
@@ -10,15 +9,23 @@ html {
 body {
   font-family: "montserrat", sans-serif;
   font-size: var(normal-font-size);
-  background-color: #FFFFFF;
-  color: hsl(227,15%,50%);
+  background-color: #ffffff;
+  color: hsl(227, 15%, 50%);
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
-h1,h2,h3 {
-  color: #2F327D;
+.main-container {
+  flex: 1;
+}
+
+h1,
+h2,
+h3 {
+  color: #2f327d;
   font-weight: 200;
 }
 
@@ -30,7 +37,7 @@ a {
   font-family: "montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  color: #2F327D;
+  color: #2f327d;
   text-decoration: none;
 }
 
@@ -77,12 +84,12 @@ button:hover {
   padding: 4.5rem 0 2rem;
 }
 
-  /*header dan navbar*/
-.logo{
+/*header dan navbar*/
+.logo {
   margin-right: auto;
-    filter: url(#drop-shadow);
-    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=20, OffY=12, Color='#444')";
-    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=20, OffY=12, Color='#444')";
+  filter: url(#drop-shadow);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=20, OffY=12, Color='#444')";
+  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=20, OffY=12, Color='#444')";
 }
 
 .nav__link {
@@ -91,29 +98,30 @@ button:hover {
   gap: 5vw;
 }
 
-
-.nav__link li a{
+.nav__link li a {
   transition: all 0.3s ease 0s;
 }
 
-.nav__link li a:hover{
-  color: #579BB1;
+.nav__link li a:hover {
+  color: #579bb1;
 }
 
 .footer {
-  background: linear-gradient(170deg,
+  background: linear-gradient(
+    170deg,
     rgb(73, 187, 189, 1),
-    rgb(62, 163, 165, 1));
+    rgb(62, 163, 165, 1)
+  );
   margin-top: 120px;
 }
 
 .footer--container {
-  row-gap: 2.5rem;  
+  row-gap: 2.5rem;
 }
 
 .footer--logo {
-  column-gap: .25rem;
-  margin-bottom: .75rem;
+  column-gap: 0.25rem;
+  margin-bottom: 0.75rem;
   width: 200px;
   height: auto;
 }
@@ -125,7 +133,7 @@ button:hover {
 }
 
 .copyright {
-  color: #B2B3CF;
+  color: #b2b3cf;
 }
 
 .navbar-height {
@@ -133,29 +141,29 @@ button:hover {
 }
 
 .navbar-container {
-    top: 0;
-    width: 80%;
-    height: 125px;
-    background: transparent;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 10%;
-    align-items: center;
-    position: fixed;
-    background-color: white;
-    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
-    z-index: 777;
+  top: 0;
+  width: 80%;
+  height: 125px;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+  z-index: 777;
 }
 
 .logo-container img {
-    width: 70%;
-    height: auto;
+  width: 70%;
+  height: auto;
 }
 
 .menu-profile-container {
-    display: flex;
-    gap: 5vw;
-    align-items: center;
+  display: flex;
+  gap: 5vw;
+  align-items: center;
 }
 
 .button-sign-container {
@@ -163,7 +171,7 @@ button:hover {
   gap: 2vw;
 }
 
-.button-sign-container a  {
+.button-sign-container a {
   text-align: center;
   width: 100px;
   border-radius: 16px;
@@ -172,17 +180,17 @@ button:hover {
 
 .signin-button {
   background-color: transparent;
-  color: #49BBBD;
-  border: 1px solid #49BBBD;
+  color: #49bbbd;
+  border: 1px solid #49bbbd;
 }
-.signup-button{
-  background-color: #49BBBD;
+.signup-button {
+  background-color: #49bbbd;
   color: white;
 }
 
 .signin-button:hover {
   border-color: #46acad;
-  color: #579BB1;
+  color: #579bb1;
   transform: scale(1.01);
 }
 
@@ -192,102 +200,100 @@ button:hover {
 }
 
 .profile-container {
-    display: flex;
-    gap: 15px;
+  display: flex;
+  gap: 15px;
 }
 
 .profile-picture {
-    background: transparent;
-    border: 0.1px solid #49BBBD;
-    border-radius: 100%;
-    width: 65px;
-    height: 65px;
+  background: transparent;
+  border: 0.1px solid #49bbbd;
+  border-radius: 100%;
+  width: 65px;
+  height: 65px;
 }
 
 .profile-picture img {
-    width: 100%;
+  width: 100%;
 }
 
 .profile {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 .profile p {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 27px;
-    /* identical to box height */
-    
-    letter-spacing: 0.02em;
-    
-    color: #000000;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+  /* identical to box height */
+
+  letter-spacing: 0.02em;
+
+  color: #000000;
 }
 .profile #arrow-profile {
-    width: 100%;
-    height: auto;
-    transition: 0.5s;
+  width: 100%;
+  height: auto;
+  transition: 0.5s;
 }
 
 #arrow-profile.active {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .tombol-menu {
-    position: absolute;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 20px;
+  position: absolute;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
 }
 
 .tombol-menu .garis {
-    height: 3px;
-    background-color: #175747;
-
+  height: 3px;
+  background-color: #175747;
 }
 
-
 .sidebar {
-    width: 50%;
-    height: 100%;
-    background-color:#fefefe ;
+  width: 50%;
+  height: 100%;
+  background-color: #fefefe;
 }
 
 .back {
-    width: 50%;
-    height: 100%;
-    background: gray;
-    opacity: 0.3;
+  width: 50%;
+  height: 100%;
+  background: gray;
+  opacity: 0.3;
 }
 
 .sidebar .logo-container {
-    padding: 10%;
+  padding: 10%;
 }
 
 .navbar-hamburger-container {
-    position: fixed;
-    top: 0;
-    display: none;
-    right: -100%;
-    width: 100%;
-    height: 100%;
-    transition: 0.1s ease-in-out;
-    z-index: 999;
+  position: fixed;
+  top: 0;
+  display: none;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  transition: 0.1s ease-in-out;
+  z-index: 999;
 }
 
 .menu-sidebar {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu-sidebar a {
-    color: #49BBBD;
-    padding: 5% 10%;
+  color: #49bbbd;
+  padding: 5% 10%;
 }
 .menu-sidebar a:hover {
-   background:  rgba(179, 185, 185, 0.2);
+  background: rgba(179, 185, 185, 0.2);
 }
 
 #cart-img {
@@ -324,11 +330,11 @@ button:hover {
 .profile-menu a {
   color: black;
   padding: 20px;
-  border-radius: 10px
+  border-radius: 10px;
 }
 
-.profile-menu a:hover{
-  background: #49BBBD;
+.profile-menu a:hover {
+  background: #49bbbd;
   color: white;
 }
 
@@ -337,44 +343,40 @@ button:hover {
   max-height: 300px;
 }
 
-@media screen and (max-width: 900px) 
-{
-    .profile-menu.show {
-      display: none;
-    } 
-    .navbar-hamburger-container {
-        display: flex;
-    }
-    
-    .navbar-hamburger-container.active {
-        right: 0;
-    }
-    .navbar-container {
-        height: fit-content;
-        padding: 5% 10%;
-    }
-    .menu-container, .profile-container {
-        display: none;
-    }
-    .tombol-menu {
-        position: relative;
-        display: flex;
-    }
+@media screen and (max-width: 900px) {
+  .profile-menu.show {
+    display: none;
+  }
+  .navbar-hamburger-container {
+    display: flex;
+  }
 
-    .logo-container img {
-        width: 86px;
-    }
+  .navbar-hamburger-container.active {
+    right: 0;
+  }
+  .navbar-container {
+    height: fit-content;
+    padding: 5% 10%;
+  }
+  .menu-container,
+  .profile-container {
+    display: none;
+  }
+  .tombol-menu {
+    position: relative;
+    display: flex;
+  }
 
-
-
+  .logo-container img {
+    width: 86px;
+  }
 }
 
-@media screen and (max-width: 500px){
-  .button-sign-container a{
+@media screen and (max-width: 500px) {
+  .button-sign-container a {
     width: 70px;
     font-size: 12px;
     padding: 10px 0px;
     border-radius: 8px;
   }
-} 
-
+}

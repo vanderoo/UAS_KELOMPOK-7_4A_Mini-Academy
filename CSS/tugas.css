@@ -71,6 +71,8 @@ td {
   width: 95%;
   max-height: 90%;
   margin: 0.8rem auto;
+  overflow-x: auto;
+  overflow-x: hidden;
 }
 
 .menu {
