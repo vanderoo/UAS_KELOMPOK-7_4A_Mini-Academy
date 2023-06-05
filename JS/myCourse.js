@@ -59,7 +59,5 @@ function addCourses(container){
 }
 addCourses(myCourses);
 addCourses(waitingPaymentCourses);
-addCourses(waitingPaymentCourses);
-addCourses(waitingPaymentCourses);
 addCourses(notRegisteredCourses);
 
