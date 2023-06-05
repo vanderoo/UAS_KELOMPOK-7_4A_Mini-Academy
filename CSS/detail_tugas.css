@@ -61,7 +61,16 @@ td {
 }
 
 .cari {
-  margin-left: 770px;
+  margin-left: 815px;
+}
+
+.cari button {
+  background-color: transparent;
+}
+
+.cari img {
+  width: 40px;
+  height: auto;
 }
 
 .list_tugas {
