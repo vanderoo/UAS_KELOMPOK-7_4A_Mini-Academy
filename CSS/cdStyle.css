@@ -1,3 +1,8 @@
+body {
+  opacity: 0;
+}
+
+
 .banner img {
   width: 100%;
   height: auto;
@@ -207,6 +212,35 @@
   height: fit-content;
 }
 
+
+
+
+.submission-accordion {
+  max-width: 100%;
+  margin-top: 20px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #252641;
+  cursor: pointer;
+}
+.submission-accordion.active img {
+  transform: rotate(180deg);
+}
+
+.submission-desc {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease;
+}
+.submission-desc p {
+  padding: 12px;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.submission-accordion.active .submission-desc {
+  max-height: 300px;
+  animation: fade 1s ease-in-out;
+}
 /* SILABUS ACCORDION */
 .silabus-accordion {
   max-width: 100%;
@@ -220,10 +254,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 15px;
 }
 .silabus-title h3 {
   font-size: 18px;
   color: #252641;
+  flex: 1;
 }
 
 .silabus-desc {

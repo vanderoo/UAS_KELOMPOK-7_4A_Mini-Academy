@@ -1,573 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Course Detail | Mini Academy</title>
 
-    <link rel="stylesheet" href="../css/accordion.css" />
-    <link rel="stylesheet" href="../CSS/header_footer.css" />
-    <link rel="stylesheet" href="../CSS/cdStyle.css" />
-    <link
-      rel="shortcut icon"
-      type="text/css"
-      href="../ASET/ICON/minilogo.ico"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Course Detail | Mini Academy</title>
 
-  <body>
-    <div class="main-container">
-      <div class="navbar-container">
+  <link rel="stylesheet" href="../css/accordion.css" />
+  <link rel="stylesheet" href="../CSS/header_footer.css" />
+  <link rel="stylesheet" href="../CSS/cdStyle.css" />
+  <link rel="shortcut icon" type="text/css" href="../ASET/ICON/minilogo.ico" />
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="navbar-container">
+      <div class="logo-container">
+        <img src="../ASET/GAMBAR/minilogo.png" alt="logo" />
+      </div>
+      <div class="menu-profile-container">
+        <div class="profile-menu">
+          <a href="MyCourse.html">My Course</a>
+          <a href="../index.html">Logout</a>
+        </div>
+        <div class="menu-container">
+          <ul class="nav__link">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="Course.html">Course</a></li>
+          </ul>
+        </div>
+        <div class="cart-menu">
+          <a href="cart.html"><img id="cart-img" src="../ASET/GAMBAR/Cart/cart.svg" alt="" /></a>
+        </div>
+        <a href="#" onclick="event.preventDefault()" class="profile-container">
+          <div class="profile-picture">
+            <img src="../ASET/GAMBAR/profilePict.svg" alt="" />
+          </div>
+          <div class="profile">
+            <p>Lina</p>
+            <img id="arrow-profile" src="../ASET/GAMBAR/arrow.svg" alt="" />
+          </div>
+        </a>
+        <a href="#" onclick="event.preventDefault()" class="tombol-menu hamburger">
+          <span class="garis"></span>
+          <span class="garis"></span>
+          <span class="garis"></span>
+        </a>
+      </div>
+    </div>
+
+    <div class="navbar-hamburger-container">
+      <a class="back"> </a>
+
+      <div class="sidebar">
         <div class="logo-container">
           <img src="../ASET/GAMBAR/minilogo.png" alt="logo" />
         </div>
-        <div class="menu-profile-container">
-          <div class="profile-menu">
-            <a href="MyCourse.html">My Course</a>
-            <a href="../index.html">Logout</a>
-          </div>
-          <div class="menu-container">
-            <ul class="nav__link">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="Course.html">Course</a></li>
-            </ul>
-          </div>
-          <div class="cart-menu">
-            <a href="cart.html"
-              ><img id="cart-img" src="../ASET/GAMBAR/Cart/cart.svg" alt=""
-            /></a>
-          </div>
-          <a
-            href="#"
-            onclick="event.preventDefault()"
-            class="profile-container"
-          >
-            <div class="profile-picture">
-              <img src="../ASET/GAMBAR/profilePict.svg" alt="" />
-            </div>
-            <div class="profile">
-              <p>Lina</p>
-              <img id="arrow-profile" src="../ASET/GAMBAR/arrow.svg" alt="" />
-            </div>
-          </a>
-          <a
-            href="#"
-            onclick="event.preventDefault()"
-            class="tombol-menu hamburger"
-          >
-            <span class="garis"></span>
-            <span class="garis"></span>
-            <span class="garis"></span>
-          </a>
-        </div>
-      </div>
-
-      <div class="navbar-hamburger-container">
-        <a class="back"> </a>
-
-        <div class="sidebar">
-          <div class="logo-container">
-            <img src="../ASET/GAMBAR/minilogo.png" alt="logo" />
-          </div>
-          <div class="menu-sidebar">
-            <a href="index.html" id="side-home">Home</a>
-            <a href="Course.html" id="side-course">Course</a>
-            <a href="MyCourse.html" id="side-mycourse">My Course</a>
-            <a href="index.html" id="side-home">Logout</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="navbar-height"></div>
-
-      <div class="banner">
-        <img src="../ASET/GAMBAR/banner.svg" alt="" />
-      </div>
-
-      <div class="course">
-        <div class="information">
-          <p class="judul">AWS Certified solutions Architect</p>
-          <div class="menu">
-            <div
-              class="menu-item information-menu active"
-              onclick="showContainer(0)"
-            >
-              Information
-            </div>
-            <div class="menu-item silabus-menu" onclick="showContainer(1)">
-              Syllabus
-            </div>
-            <div class="menu-item submission-menu" onclick="showContainer(2)">
-              Submission
-            </div>
-          </div>
-          <div class="detail">
-            <div class="about-container active">
-              <h1 class="detail-title">About Bootcamp</h1>
-              <p>
-                AWS Certified Solutions Architect is a certification provided by
-                Amazon Web Services (AWS) to IT professionals with the ability
-                to design and manage AWS-based cloud solutions. This
-                certification consists of two levels, namely Associate and
-                Professional. For Associate certification, there are two
-                choices, namely AWS Certified Solutions Architect - Associate
-                and AWS Certified Cloud Practitioner. Meanwhile, for
-                Professional certification, only AWS Certified Solutions
-                Architect - Professional is available. Materials to be tested in
-                the certification include an understanding of cloud
-                architecture, selection of the best solutions based on business
-                needs, security, scalability, and availability of AWS services.
-                This certification can help increase the ability and credibility
-                of IT professionals in managing cloud infrastructure on AWS.
-              </p>
-            </div>
-            <div class="silabus-container">
-              <h1 class="detail-title">Curriculum & Syllabus</h1>
-              <div class="old-accordion">
-                <div class="silabus-accordion">
-                  <div class="silabus-title">
-                    <h3>Pengantar AWS dan cloud computing</h3>
-                    <img src="../ASET/GAMBAR/arrow.svg" alt="" />
-                  </div>
-
-                  <div class="silabus-desc">
-                    <p>
-                      Sejarah dan perkembangan AWS, Konsep dasar cloud
-                      computing, Model layanan cloud
-                    </p>
-                  </div>
-                </div>
-                <div class="silabus-accordion">
-                  <div class="silabus-title">
-                    <h3>Identifikasi kebutuhan dan desain solusi</h3>
-                    <img src="../ASET/GAMBAR/arrow.svg" alt="" />
-                  </div>
-
-                  <div class="silabus-desc">
-                    <p>
-                      Analisis kebutuhan bisnis, Identifikasi fitur dan
-                      fungsionalitas AWS, Membuat desain solusi yang sesuai
-                    </p>
-                  </div>
-                </div>
-                <div class="silabus-accordion">
-                  <div class="silabus-title">
-                    <h3>Pemilihan layanan AWS yang tepat</h3>
-                    <img src="../ASET/GAMBAR/arrow.svg" alt="" />
-                  </div>
-
-                  <div class="silabus-desc">
-                    <p>
-                      Compute services, Storage services, Database services,
-                      Network services, Security and identity services
-                    </p>
-                  </div>
-                </div>
-                <div class="silabus-accordion">
-                  <div class="silabus-title">
-                    <h3>Implementasi dan deployment solusi</h3>
-                    <img src="../ASET/GAMBAR/arrow.svg" alt="" />
-                  </div>
-
-                  <div class="silabus-desc">
-                    <p>
-                      Membuat dan mengelola instance EC2, Konfigurasi load
-                      balancer dan auto scaling group, Deploy aplikasi pada AWS,
-                      Menggunakan layanan manajemen database
-                    </p>
-                  </div>
-                </div>
-                <div class="silabus-accordion">
-                  <div class="silabus-title">
-                    <h3>Keamanan dan kepatuhan di AWS</h3>
-                    <img src="../ASET/GAMBAR/arrow.svg" alt="" />
-                  </div>
-
-                  <div class="silabus-desc">
-                    <p>
-                      Penerapan kontrol akses, Pemantauan dan audit keamanan,
-                      Kepatuhan regulasi
-                    </p>
-                  </div>
-                </div>
-                <div class="silabus-accordion">
-                  <div class="silabus-title">
-                    <h3>Optimisasi solusi AWS</h3>
-                    <img src="../ASET/GAMBAR/arrow.svg" alt="" />
-                  </div>
-
-                  <div class="silabus-desc">
-                    <p>
-                      Scalability dan elasticity, Cost optimization, Performance
-                      optimization
-                    </p>
-                  </div>
-                </div>
-                <div class="silabus-accordion">
-                  <div class="silabus-title">
-                    <h3>Persiapan dan Ujian Sertifikasi</h3>
-                    <img src="../ASET/GAMBAR/arrow.svg" alt="" />
-                  </div>
-
-                  <div class="silabus-desc">
-                    <p>
-                      Ujian simulasi dan persiapan ujian dan Panduan untuk
-                      mengikuti ujian
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="submission-container">
-              <div class="old-accordion">
-                <div class="silabus-accordion">
-                  <div class="silabus-title">
-                    <h3>Tugas Pertemuan 1</h3>
-                    <img src="../ASET/GAMBAR/arrow.svg" alt="" />
-                  </div>
-
-                  <div class="silabus-desc">
-                    <p>
-                      Sejarah dan perkembangan AWS, Konsep dasar cloud
-                      computing, Model layanan cloud
-                    </p>
-                    <form action="#" method="post" class="upload_tugas">
-                      <table>
-                        <tr>
-                          <td colspan="2">
-                            <input type="file" id="gambar" required />
-                          </td>
-                          <td>
-                            <input
-                              class="submit"
-                              type="submit"
-                              value="Upload"
-                            />
-                          </td>
-                        </tr>
-                      </table>
-                    </form>
-                  </div>
-                </div>
-                <div class="silabus-accordion">
-                  <div class="silabus-title">
-                    <h3>Tugas Pertemuan 2</h3>
-                    <img src="../ASET/GAMBAR/arrow.svg" alt="" />
-                  </div>
-
-                  <div class="silabus-desc">
-                    <p>
-                      Sejarah dan perkembangan AWS, Konsep dasar cloud
-                      computing, Model layanan cloud
-                    </p>
-                    <form action="#" method="post" class="upload_tugas">
-                      <table>
-                        <tr>
-                          <td colspan="2">
-                            <input type="file" id="gambar" required />
-                          </td>
-                          <td>
-                            <input
-                              class="submit"
-                              type="submit"
-                              value="Upload"
-                            />
-                          </td>
-                        </tr>
-                      </table>
-                    </form>
-                  </div>
-                </div>
-                <div class="silabus-accordion">
-                  <div class="silabus-title">
-                    <h3>Tugas Pertemuan 3</h3>
-                    <img src="../ASET/GAMBAR/arrow.svg" alt="" />
-                  </div>
-
-                  <div class="silabus-desc">
-                    <p>
-                      Sejarah dan perkembangan AWS, Konsep dasar cloud
-                      computing, Model layanan cloud
-                    </p>
-                    <form action="#" method="post" class="upload_tugas">
-                      <table>
-                        <tr>
-                          <td colspan="2">
-                            <input type="file" id="gambar" required />
-                          </td>
-                          <td>
-                            <input
-                              class="submit"
-                              type="submit"
-                              value="Upload"
-                            />
-                          </td>
-                        </tr>
-                      </table>
-                    </form>
-                  </div>
-                </div>
-                <div class="silabus-accordion">
-                  <div class="silabus-title">
-                    <h3>Tugas Pertemuan 4</h3>
-                    <img src="../ASET/GAMBAR/arrow.svg" alt="" />
-                  </div>
-
-                  <div class="silabus-desc">
-                    <p>
-                      Sejarah dan perkembangan AWS, Konsep dasar cloud
-                      computing, Model layanan cloud
-                    </p>
-                    <form action="#" method="post" class="upload_tugas">
-                      <table>
-                        <tr>
-                          <td colspan="2">
-                            <input type="file" id="gambar" required />
-                          </td>
-                          <td>
-                            <input
-                              class="submit"
-                              type="submit"
-                              value="Upload"
-                            />
-                          </td>
-                        </tr>
-                      </table>
-                    </form>
-                  </div>
-                </div>
-                <div class="silabus-accordion">
-                  <div class="silabus-title">
-                    <h3>Tugas Pertemuan 5</h3>
-                    <img src="../ASET/GAMBAR/arrow.svg" alt="" />
-                  </div>
-
-                  <div class="silabus-desc">
-                    <p>
-                      Sejarah dan perkembangan AWS, Konsep dasar cloud
-                      computing, Model layanan cloud
-                    </p>
-                    <form action="#" method="post" class="upload_tugas">
-                      <table>
-                        <tr>
-                          <td colspan="2">
-                            <input type="file" id="gambar" required />
-                          </td>
-                          <td>
-                            <input
-                              class="submit"
-                              type="submit"
-                              value="Upload"
-                            />
-                          </td>
-                        </tr>
-                      </table>
-                    </form>
-                  </div>
-                </div>
-                <div class="silabus-accordion">
-                  <div class="silabus-title">
-                    <h3>Tugas Pertemuan 6</h3>
-                    <img src="../ASET/GAMBAR/arrow.svg" alt="" />
-                  </div>
-
-                  <div class="silabus-desc">
-                    <p>
-                      Sejarah dan perkembangan AWS, Konsep dasar cloud
-                      computing, Model layanan cloud
-                    </p>
-                    <form action="#" method="post" class="upload_tugas">
-                      <table>
-                        <tr>
-                          <td colspan="2">
-                            <input type="file" id="gambar" required />
-                          </td>
-                          <td>
-                            <input
-                              class="submit"
-                              type="submit"
-                              value="Upload"
-                            />
-                          </td>
-                        </tr>
-                      </table>
-                    </form>
-                  </div>
-                </div>
-                <div class="silabus-accordion">
-                  <div class="silabus-title">
-                    <h3>Tugas Pertemuan 7</h3>
-                    <img src="../ASET/GAMBAR/arrow.svg" alt="" />
-                  </div>
-
-                  <div class="silabus-desc">
-                    <p>
-                      Sejarah dan perkembangan AWS, Konsep dasar cloud
-                      computing, Model layanan cloud
-                    </p>
-                    <form action="#" method="post" class="upload_tugas">
-                      <table>
-                        <tr>
-                          <td colspan="2">
-                            <input type="file" id="gambar" required />
-                          </td>
-                          <td>
-                            <input
-                              class="submit"
-                              type="submit"
-                              value="Upload"
-                            />
-                          </td>
-                        </tr>
-                      </table>
-                    </form>
-                  </div>
-                </div>
-                <div class="silabus-accordion">
-                  <div class="silabus-title">
-                    <h3>Tugas Pertemuan 8</h3>
-                    <img src="../ASET/GAMBAR/arrow.svg" alt="" />
-                  </div>
-
-                  <div class="silabus-desc">
-                    <p>
-                      Sejarah dan perkembangan AWS, Konsep dasar cloud
-                      computing, Model layanan cloud
-                    </p>
-                    <form action="#" method="post" class="upload_tugas">
-                      <table>
-                        <tr>
-                          <td colspan="2">
-                            <input type="file" id="gambar" required />
-                          </td>
-                          <td>
-                            <input
-                              class="submit"
-                              type="submit"
-                              value="Upload"
-                            />
-                          </td>
-                        </tr>
-                      </table>
-                    </form>
-                  </div>
-                </div>
-                <div class="silabus-accordion">
-                  <div class="silabus-title">
-                    <h3>Tugas Pertemuan 9</h3>
-                    <img src="../ASET/GAMBAR/arrow.svg" alt="" />
-                  </div>
-
-                  <div class="silabus-desc">
-                    <p>
-                      Sejarah dan perkembangan AWS, Konsep dasar cloud
-                      computing, Model layanan cloud
-                    </p>
-                    <form action="#" method="post" class="upload_tugas">
-                      <table>
-                        <tr>
-                          <td colspan="2">
-                            <input type="file" id="gambar" required />
-                          </td>
-                          <td>
-                            <input
-                              class="submit"
-                              type="submit"
-                              value="Upload"
-                            />
-                          </td>
-                        </tr>
-                      </table>
-                    </form>
-                  </div>
-                </div>
-                <div class="silabus-accordion">
-                  <div class="silabus-title">
-                    <h3>Tugas Pertemuan 10</h3>
-                    <img src="../ASET/GAMBAR/arrow.svg" alt="" />
-                  </div>
-
-                  <div class="silabus-desc">
-                    <p>
-                      Sejarah dan perkembangan AWS, Konsep dasar cloud
-                      computing, Model layanan cloud
-                    </p>
-                    <form action="#" method="post" class="upload_tugas">
-                      <table>
-                        <tr>
-                          <td colspan="2">
-                            <input type="file" id="gambar" required />
-                          </td>
-                          <td>
-                            <input
-                              class="submit"
-                              type="submit"
-                              value="Upload"
-                            />
-                          </td>
-                        </tr>
-                      </table>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="buy">
-          <img src="../ASET/GAMBAR/buy_banner.svg" alt="" />
-          <div class="price">
-            <p id="harga">RP. 250.000</p>
-            <p id="diskon">50% Off</p>
-          </div>
-          <p id="waktu-diskon">11 hour left at this price</p>
-          <div class="buy-cart">
-            <a href="payment.html"><button class="button-buy">Buy Now</button></a>
-            <a href=""><button class="button-cart">Add to Cart</button></a>
-          </div>
-          <hr />
-          <div class="share">
-            <p class="sub">Share this bootcamp</p>
-            <div class="media">
-              <a href="#share-twitter"
-                ><img src="../ASET/GAMBAR/twitter.svg" alt=""
-              /></a>
-              <a href="#share-facebook"
-                ><img src="../ASET/GAMBAR/facebook.svg" alt=""
-              /></a>
-              <a href="#share-instagram"
-                ><img src="../ASET/GAMBAR/instagram.svg" alt=""
-              /></a>
-              <a href="#share-telegram"
-                ><img src="../ASET/GAMBAR/telegram.svg" alt=""
-              /></a>
-              <a href="#share-whatsapp"
-                ><img src="../ASET/GAMBAR/whatsapp.svg" alt=""
-              /></a>
-            </div>
-          </div>
+        <div class="menu-sidebar">
+          <a href="index.html" id="side-home">Home</a>
+          <a href="Course.html" id="side-course">Course</a>
+          <a href="MyCourse.html" id="side-mycourse">My Course</a>
+          <a href="index.html" id="side-home">Logout</a>
         </div>
       </div>
     </div>
 
-    <footer class="footer section">
-      <center>
-        <div class="footer--container container grid">
-          <div>
-            <img src="../ASET/GAMBAR/logofooter.png" class="footer--logo" />
-            <p class="footer--description">
-              "Unlock your potential with our academy's courses today."
-            </p>
-            <p class="copyright">@2023 Team Seven</p>
+    <div class="navbar-height"></div>
+
+    <div class="banner">
+      <img src="../ASET/GAMBAR/banner.svg" alt="" />
+    </div>
+
+    <div class="course">
+      <div class="information">
+        <p id="judul-kelas" class="judul">AWS Certified solutions Architect</p>
+        <div class="menu">
+          <div class="menu-item information-menu active" onclick="showContainer(0)">
+            Information
+          </div>
+          <div class="menu-item silabus-menu" onclick="showContainer(1)">
+            Syllabus
+          </div>
+          <div class="menu-item submission-menu" onclick="showContainer(2)">
+            Submission
           </div>
         </div>
-      </center>
-    </footer>
+        <div class="detail">
+          <div class="about-container active">
+            <h1 class="detail-title">About Bootcamp</h1>
+            <p id="about-bootcamp"></p>
+          </div>
+          <div class="silabus-container">
+            <h1 class="detail-title">Curriculum & Syllabus</h1>
+            <div class="old-accordion" id="silabus-item-container">
+              <template id="silabus-template">
+                <div class="silabus-accordion">
+                  <div class="silabus-title">
+                    <h3 id="title-silabus">Pengantar AWS dan cloud computing</h3>
+                    <img src="../ASET/GAMBAR/arrow.svg" alt="" />
+                  </div>
 
-    <script src="../JS/course_detail.js"></script>
-    <script src="../JS/navbar.js"></script>
-    <script src="../js/accordion.js"></script>
-  </body>
+                  <div class="silabus-desc">
+                    <p id="description-silabus">
+                      Sejarah dan perkembangan AWS, Konsep dasar cloud
+                      computing, Model layanan cloud
+                    </p>
+                  </div>
+                </div>
+              </template>
+            </div>
+          </div>
+          <div class="submission-container">
+            <h1 class="detail-title">Submission</h1>
+            <div class="old-accordion" id="submission-item-container">
+              <template id="submission-template">
+                <div class="submission-accordion">
+                  <div class="silabus-title">
+                    <h3 id="judul-tugas">Tugas Pertemuan 1</h3>
+                    <p id="deadline-tugas">Deadline:  2023-6-10</p>
+                    <img src="../ASET/GAMBAR/arrow.svg" alt="" />
+                  </div>
+                  <div class="submission-desc">
+                    <p id="deskripsi-tugas">
+                      Sejarah dan perkembangan AWS, Konsep dasar cloud
+                      computing, Model layanan cloud
+                    </p>
+                    <form action="#" method="post" class="upload_tugas">
+                      <table>
+                        <tr>
+                          <td colspan="2">
+                            <input type="file" id="gambar" required />
+                          </td>
+                          <td>
+                            <input class="submit" type="submit" value="Upload" />
+                          </td>
+                        </tr>
+                      </table>
+                    </form>
+                  </div>
+                </div>
+              </template>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="buy">
+        <img src="../ASET/GAMBAR/buy_banner.svg" alt="" />
+        <div class="price">
+          <p id="harga">RP. 250.000</p>
+        </div>
+        <div class="buy-cart">
+          <button class="button-buy">Buy Now</button>
+          <button class="button-cart">Add to Cart</button>
+        </div>
+        <hr />
+        <div class="share">
+          <p class="sub">Share this bootcamp</p>
+          <div class="media">
+            <a href="#share-twitter"><img src="../ASET/GAMBAR/twitter.svg" alt="" /></a>
+            <a href="#share-facebook"><img src="../ASET/GAMBAR/facebook.svg" alt="" /></a>
+            <a href="#share-instagram"><img src="../ASET/GAMBAR/instagram.svg" alt="" /></a>
+            <a href="#share-telegram"><img src="../ASET/GAMBAR/telegram.svg" alt="" /></a>
+            <a href="#share-whatsapp"><img src="../ASET/GAMBAR/whatsapp.svg" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer section">
+    <center>
+      <div class="footer--container container grid">
+        <div>
+          <img src="../ASET/GAMBAR/logofooter.png" class="footer--logo" />
+          <p class="footer--description">
+            "Unlock your potential with our academy's courses today."
+          </p>
+          <p class="copyright">@2023 Team Seven</p>
+        </div>
+      </div>
+    </center>
+  </footer>
+
+  <script src="../JS/course_detail.js"></script>
+  <script src="../JS/navbar.js"></script>
+  <script src="../js/accordion.js"></script>
+</body>
+
 </html>

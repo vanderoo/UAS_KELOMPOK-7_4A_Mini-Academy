@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat:wght@500&display=swap");
 
 /*utama*/
+body {
+  opacity: 0;
+}
 .box {
   background-color: rgba(158, 205, 255, 0.4);
   display: flex;

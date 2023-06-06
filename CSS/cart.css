@@ -39,7 +39,6 @@ body {
   gap: 10px;
   width: 100%;
   max-width: 1000px;
-  min-height: 100px;
   padding-bottom: 10px;
   border-bottom: 1px solid gray;
   /* background-color: rgb(185, 211, 219); */
