@@ -95,7 +95,6 @@
   float: left;
   text-align: center;
   border-radius: 20px;
-  cursor: pointer;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 7px rgba(0, 0, 0, 0.12);
   transition: 0.4s;
   background: white;
