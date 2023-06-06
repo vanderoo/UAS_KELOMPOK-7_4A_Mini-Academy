@@ -149,9 +149,6 @@
   .content {
     width: 45%;
   }
-  .course-card {
-    flex-basis: calc(33.33% - 17px);
-  }
   .course-card .gambar-utama img {
     width: auto;
     height: auto;
