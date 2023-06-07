@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <link rel="stylesheet"  href="/CSS/login.css" >
-    <link rel="shortcut icon"  href="ASET/ICON/minilogo.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/login.css">
+    <link rel="shortcut icon" href="ASET/ICON/minilogo.ico">
     <title>Login | Mini Academey</title>
 </head>
 
@@ -18,7 +19,7 @@
                     <img id="gambar-login-register" src="ASET/GAMBAR/banner-login.svg"></img>
                     <div class="logo">
                         <a href="index.html">
-                            <img src="/ASET/GAMBAR/mini.svg" alt="">
+                            <img src="ASET/GAMBAR/mini.svg" alt="">
                         </a>
                     </div>
                 </div>
@@ -28,9 +29,9 @@
                     <a href="index.html">
                         <img src="ASET/GAMBAR/Mini_b.svg" alt="">
                     </a>
-                    <p>Welcome to  Mini Academy</p>
+                    <p>Welcome to Mini Academy</p>
                 </div>
-                
+
                 <div class="box-form">
                     <div id="btn-box" class="button-container"></div>
                     <a href="#login" id="log-btn" class="toggle-btn active">Login</a>
@@ -44,8 +45,16 @@
                         <tr>
                             <td colspan="2">
                                 <div class="register-form">
+                                    <label for="nama">Nama</label>
+                                    <input type="text" placeholder="Enter your name" id="nama" required>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <div class="register-form">
                                     <label for="email">Email Address</label>
-                                    <input type="text" placeholder="Enter your Email Address"  id="email" required>
+                                    <input type="email" placeholder="Enter your Email Address" id="email" required>
                                 </div>
                             </td>
                         </tr>
@@ -73,14 +82,14 @@
                             <td colspan="2">
                                 <div class="register-form">
                                     <label for="con-pass">Confirm Password</label>
-                                    <input type="text" placeholder="Re-Enter your Password"  id="con-pass" required>
+                                    <input type="password" placeholder="Re-Enter your Password" id="con-pass" required>
                                 </div>
                             </td>
                         <tr>
                             <td colspan="2">
-                                <div class="cekbox">
-                                <input type="checkbox" id="checkbox">
-                                <label for="checkbox">Daftar Sebagai Mentor</label>
+                                <div class="cekbox" style="display: none;">
+                                    <input type="checkbox" id="checkbox-mentor">
+                                    <label for="checkbox">Daftar Sebagai Mentor</label>
                                 </div>
                             </td>
                         </tr>
@@ -113,8 +122,10 @@
         </div>
     </div>
 
-    <script src="/JS/log_reg.js"></script>
-    <script src="/JS/log_reg_submit.js"></script>
+    <script src="JS/log_reg.js"></script>
+    <script src="JS/log_reg_submit.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
 </body>
+
 </html>

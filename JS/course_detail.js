@@ -97,7 +97,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function tambahCart() {
     fetch(`http://127.0.0.1:3333/payment/cart/${idKelas}`, {
-      method: 'POST'
+      method: 'POST',
+      credentials:"include"
     })
       .then(response => response.json())
       .then(data => {
