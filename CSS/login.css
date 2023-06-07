@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat:wght@500&display=swap");
 
-
 * {
   margin: 0;
   padding: 0;
@@ -26,7 +25,7 @@ body {
   position: relative;
   gap: 10vw;
   align-items: center;
-  
+
   padding: 80px;
 }
 
@@ -82,13 +81,29 @@ body {
   text-decoration: none;
 }
 
-.button-container{
+.cekbox {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.cekbox input {
+  padding: 0;
+  margin: 0 0 0 0;
+  width: 40px;
+}
+.cekbox label {
+  width: 100%;
+  height: auto;
+  font-size: 11px;
+}
+.button-container {
   width: 10vw;
   height: 70%;
   border-radius: 33px;
   position: absolute;
   left: 0vw;
-  background: #49bbbd ;
+  background: #49bbbd;
   margin: 10px;
   transition: 0.5s;
 }
@@ -100,7 +115,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
   border: none;
   width: 100%;
   border-radius: 33px;
@@ -133,7 +148,7 @@ form table {
 }
 
 .forgot a {
-  font-style:normal;
+  font-style: normal;
   font-weight: 300;
   font-size: 12px;
   line-height: 18px;
@@ -188,7 +203,7 @@ form table {
 }
 
 .login-button:hover {
-  background-color:rgba(0, 136, 169, 1);;
+  background-color: rgba(0, 136, 169, 1);
 }
 
 .google-button {
@@ -218,7 +233,7 @@ form table {
   font-weight: 500;
   font-size: 15px;
   line-height: 22px;
-  color: #ACACAC;
+  color: #acacac;
 }
 
 .gambar {
@@ -238,7 +253,7 @@ form table {
   width: 7vw;
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 900px) {
   .page--login {
     padding: 40px;
   }
@@ -265,7 +280,7 @@ form table {
   }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 500px) {
   .page--login {
     padding: 20px;
   }
@@ -273,5 +288,4 @@ form table {
   .box-form {
     width: 100%;
   }
-
 }
