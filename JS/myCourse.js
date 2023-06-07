@@ -16,7 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
   function addCourses(container) {
     const url = urls[container.id]
     console.log(`${container.id} : ${urls[container.id]}`)
-    fetch(url)
+    fetch(url, {
+      credentials:"include"
+    })
       .then(response => response.json())
       .then(courses => {
         if (courses.length === 0 && container.id === 'myCourse') {

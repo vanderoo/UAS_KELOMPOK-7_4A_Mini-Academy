@@ -344,6 +344,10 @@ button:hover {
   max-height: 300px;
 }
 
+#btn-logout{
+  cursor: pointer;
+}
+
 @media screen and (max-width: 900px) {
   .profile-menu.show {
     display: none;

@@ -15,6 +15,7 @@ function deleteCart(event){
     
     fetch(`http://127.0.0.1:3333/payment/cart/${idCartItem}`, {
         method: 'DELETE',
+        credentials:"include"
       })
         .then(response => {
           if (response.ok) {
@@ -33,7 +34,10 @@ function deleteCart(event){
 }
 
 function addCart(){
-    fetch('http://127.0.0.1:3333/payment/cart')
+    fetch('http://127.0.0.1:3333/payment/cart',{
+      method: "GET",
+      credentials:"include"
+    })
     .then(response => response.json())
     .then(cartItems => {
         let total = 0;

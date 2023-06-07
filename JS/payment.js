@@ -15,7 +15,9 @@ submitBtn.disabled = true;
 
 function addSummary() {
   if (via === 'cart') {
-    fetch('http://127.0.0.1:3333/payment/cart')
+    fetch('http://127.0.0.1:3333/payment/cart',{
+      credentials: "include"
+    })
       .then(response => response.json())
       .then(cartData => {
         console.log(cartData);
@@ -107,7 +109,9 @@ function makePayment() {
 
 function checkoutCart() {
   let cartData;
-  fetch('http://127.0.0.1:3333/payment/cart')
+  fetch('http://127.0.0.1:3333/payment/cart',{
+    credentials: "include"
+  })
     .then(response => response.json())
     .then(data => {
       cartData = data;
@@ -146,13 +150,15 @@ function buyCourse() {
 function charge(payloadItems) {
   let payloads = {
     channel: bankTerpilih,
-    items: payloadItems
+    items: [payloadItems]
   }
+  console.log(JSON.stringify(payloads));
   fetch('http://127.0.0.1:3333/payment/charge', {
     method: 'POST',
-    headers: {
+    headers:{
       'Content-Type': 'application/json'
     },
+    credentials:'include',
     body: JSON.stringify(payloads)
   })
     .then(response => response.json())

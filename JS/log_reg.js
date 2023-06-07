@@ -5,6 +5,8 @@ const logForm = document.querySelector(".remember-forgot");
 const buttonLogin = document.querySelector(".login-button");
 const googleButton = document.querySelector(".google-button p");
 const gambar = document.querySelector("#gambar-login-register");
+const cekboxMentor = document.querySelector('.cekbox')
+var  inputs = Array.from(document.getElementsByTagName('input'));
 var btn = document.querySelector("#btn-box");
 var boxForm = document.querySelector('.box-form');
 var widthElemen;
@@ -20,6 +22,7 @@ function ubahLebar(){
 }
 
 function regActive(){
+    clear();
     regBtn.classList.add("active");
     logBtn.classList.remove("active");
     btn.style.left = `${ubahLebar()}px`;
@@ -28,6 +31,7 @@ function regActive(){
         item.style.display = 'block';
     }); 
 
+    cekboxMentor.style.display = 'block';
     logForm.style.display = 'none';
     gambar.src ='ASET/GAMBAR/banner-register.svg' ;
     buttonLogin.textContent = "Register";
@@ -35,6 +39,7 @@ function regActive(){
 }
 
 function logActive(){
+    clear();
     regBtn.classList.remove("active");
     logBtn.classList.add("active");
     btn.style.left = '0';
@@ -43,10 +48,21 @@ function logActive(){
         item.style.display = 'none';
     }); 
     
+    cekboxMentor.style.display = 'none';
     logForm.style.display = 'flex';
     gambar.src ='ASET/GAMBAR/banner-login.svg' ;
     buttonLogin.textContent = "Login";
-    googleButton.textContent = "Masuk dengan Google"
+    googleButton.textContent = "Masuk dengan Google";
+}
+
+function clear(){
+    inputs.forEach(input => {
+        if(input.type === 'checkbox'){
+            input.checked = false;
+        }else {
+            input.value = "";
+        }
+    });
 }
 
 if(window.location.hash.slice(1) == "register"){
@@ -63,13 +79,7 @@ window.onload = function(){
 
     logBtn.addEventListener("click", logActive);
 
-    buttonLogin.addEventListener("click", () => {
-        if(window.location.hash.slice(1) == "register"){
-            console.log("Ini halaman register,  panggil fungsi register!");
-        }else {
-            console.log("Ini halaman login, panggil fungsi login!");
-        }
-    });
+    
 }
 
 
