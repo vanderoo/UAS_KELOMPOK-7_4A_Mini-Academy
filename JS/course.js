@@ -18,7 +18,7 @@ fetch('http://127.0.0.1:3333/auth/check', {
   .catch(error => {
     console.log(error);
   });
-  
+
 const courseTemplate = document.getElementById('course-template');
 const listCourse = document.querySelector('.list-course');
 const namaPengajar = document.getElementById('box-nama-pengajar');
@@ -28,7 +28,7 @@ const btnLearnNow = document.getElementById('btn-learn-now');
 
 function addCourses() {
 
-  fetch('http://mini-alb-436703962.ap-southeast-1.elb.amazonaws.com/course/notRegistered')
+  fetch('http://mini-alb-436703962.ap-southeast-1.elb.amazonaws.com/course/course')
     .then(response => response.json())
     .then(courses => {
       courses.forEach(course => {
