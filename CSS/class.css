@@ -74,3 +74,98 @@ form select {
   width: 515px;
   margin-top: 15px;
 }
+
+@media screen and (max-width: 1030px) {
+  .content {
+    width: 97%;
+    margin-left: 15px;
+  }
+  .submit input {
+    width: 450px;
+  }
+  form input {
+    width: 910px;
+  }
+  form select {
+    width: 910px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .content {
+    width: 97%;
+    margin-left: 15px;
+  }
+  .submit input {
+    width: 440px;
+  }
+  form input {
+    width: 890px;
+  }
+  form select {
+    width: 890px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .content {
+    width: 97%;
+    margin-left: 13px;
+  }
+  .submit input {
+    width: 440px;
+  }
+  form input {
+    width: 890px;
+  }
+  form select {
+    width: 890px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .content {
+    width: 97%;
+    margin-left: 11px;
+  }
+  .submit input {
+    width: 440px;
+  }
+  form input {
+    width: 890px;
+  }
+  form select {
+    width: 890px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    width: 96%;
+    margin-left: 9px;
+  }
+  .submit input {
+    width: 440px;
+  }
+  form input {
+    width: 890px;
+  }
+  form select {
+    width: 890px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content {
+    width: 95%;
+  }
+  .submit input {
+    width: 440px;
+  }
+  form input {
+    width: 890px;
+  }
+  form select {
+    width: 890px;
+  }
+}
