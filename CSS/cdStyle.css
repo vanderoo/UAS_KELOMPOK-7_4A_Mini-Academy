@@ -1,3 +1,8 @@
+body {
+  opacity: 0;
+}
+
+
 .banner img {
   width: 100%;
   height: auto;
@@ -52,20 +57,49 @@
   text-align: center;
 }
 
+.buy-cart {
+  display: flex;
+  gap: 30px;
+}
+
+.buy-cart a{
+  width: 100%;
+}
+
 .button-buy {
   margin: 0;
   margin-top: 30px;
-  width: 100%;
   height: 64px;
   background: #49bbbd;
-
+  width: 100%;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
   color: #ffffff;
   border-radius: 12px;
   border: none;
   cursor: pointer;
+}
+
+.button-cart {
+  width: 100%;
+  margin: 0;
+  margin-top: 30px;
+  height: 64px;
+  background: white;
+  border: 1px solid #49bbbd;
+  font-weight: 700;
+  font-size: 16px;
+  color: #49bbbd;
+  border-radius: 12px;
+  cursor: pointer;
+  text-align: center;
+  align-items: center;
+}
+
+.button-cart:hover {
+  background: white;
+  border: 1px solid rgba(0, 136, 169, 1);
+  color: rgba(0, 136, 169, 1);
 }
 
 .buy hr {
@@ -178,6 +212,35 @@
   height: fit-content;
 }
 
+
+
+
+.submission-accordion {
+  max-width: 100%;
+  margin-top: 20px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #252641;
+  cursor: pointer;
+}
+.submission-accordion.active img {
+  transform: rotate(180deg);
+}
+
+.submission-desc {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease;
+}
+.submission-desc p {
+  padding: 12px;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.submission-accordion.active .submission-desc {
+  max-height: 300px;
+  animation: fade 1s ease-in-out;
+}
 /* SILABUS ACCORDION */
 .silabus-accordion {
   max-width: 100%;
@@ -191,10 +254,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 15px;
 }
 .silabus-title h3 {
   font-size: 18px;
   color: #252641;
+  flex: 1;
 }
 
 .silabus-desc {
