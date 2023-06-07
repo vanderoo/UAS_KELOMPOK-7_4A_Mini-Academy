@@ -6,6 +6,9 @@ const jumlahCourse = document.getElementById('jumlah-course');
 const totalHarga = document.getElementById('total-harga');
 const summaryTemplate = document.getElementById('summary-template');
 const listCourseContainer = document.getElementById('list-course-container');
+const bankChaneel = document.getElementById('bank-channel');
+const vaNumber = document.getElementById('va-number');
+const idOrder = document.getElementById('order-id');
 
 var selectedBank = null;
 let totalHargaCourse = 0;
@@ -164,6 +167,7 @@ function charge(payloadItems) {
     .then(response => response.json())
     .then(data => {
       console.log(data);
+      bankChaneel = data.bank_transfer.bank;
       submitBtn.disabled = false;
       submitBtn.innerHTML = 'Ceritanya udah kebayar';
     })
