@@ -6,6 +6,7 @@ const gambarKelas = document.getElementById('gambar-kelas');
 const hapusCartItem = document.getElementById('delete-course');
 const cartTemplate = document.getElementById('cart-item-template');
 const courseCartContainer = document.querySelector('.course-container')
+const btnCo = document.querySelector('.btn-co');
 
 function deleteCart(event){
     event.preventDefault();
@@ -58,3 +59,7 @@ function addCart(){
     });
 }
 addCart();
+
+btnCo.addEventListener('click', () => {
+  window.location.href = '../Pelajar/payment.html?via=cart'
+});

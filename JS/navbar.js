@@ -1,4 +1,4 @@
-/* fetch('http://127.0.0.1:3333/auth/check', {
+fetch('http://127.0.0.1:3333/auth/check', {
   method: 'POST'
 })
   .then(response => response.json())
@@ -16,7 +16,7 @@
   })
   .catch(error => {
     console.log(error);
-  }); */
+  });
 
 
 

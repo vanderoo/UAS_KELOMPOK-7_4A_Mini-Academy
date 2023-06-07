@@ -112,8 +112,9 @@ document.addEventListener('DOMContentLoaded', () => {
   btnCart.addEventListener('click', () => {
     tambahCart();
   });
+  
   btnBuy.addEventListener('click', () => {
-    window.location.href  = '../'
+    window.location.href  = `../Pelajar/payment.html?via=buy&idKelas=${idKelas}`;
   })
 });
 
