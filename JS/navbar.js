@@ -1,3 +1,25 @@
+/* fetch('http://127.0.0.1:3333/auth/check', {
+  method: 'POST'
+})
+  .then(response => response.json())
+  .then(data => {
+    console.log('data.message:', data.message);
+    const path = window.location.pathname;
+    const relativePath = path.substring(path.lastIndexOf('/') + 1);
+    console.log('relativePath:', relativePath);
+
+    if (data.message === 'not logged in' && relativePath !== 'index.html' && relativePath !== '') {
+      window.location.href = '../log_reg.html';
+    } else {
+      console.log(data.message);
+    }
+  })
+  .catch(error => {
+    console.log(error);
+  }); */
+
+
+
 const arrowProfile = document.querySelector("#arrow-profile");
 const profile = document.querySelector(".profile-container");
 const hamburger = document.querySelector(".hamburger")

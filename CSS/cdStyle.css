@@ -73,8 +73,7 @@ body {
   background: #49bbbd;
   width: 100%;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
   color: #ffffff;
   border-radius: 12px;
   border: none;
@@ -89,11 +88,12 @@ body {
   background: white;
   border: 1px solid #49bbbd;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
   color: #49bbbd;
   border-radius: 12px;
   cursor: pointer;
+  text-align: center;
+  align-items: center;
 }
 
 .button-cart:hover {

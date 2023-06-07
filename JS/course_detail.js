@@ -1,3 +1,4 @@
+
 function showContainer(index) {
   const containers = document.querySelectorAll('.detail > div');
   const menuItems = document.querySelectorAll('.menu-item');
@@ -20,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const silabusItemContainer = document.getElementById('silabus-item-container');
   const submissionItemContainer = document.getElementById('submission-item-container');
   const btnCart = document.querySelector('.button-cart');
+  const btnBuy = document.querySelector('.button-buy');
 
   const about = document.getElementById('about-bootcamp');
   const judulKelas = document.getElementById('judul-kelas');
@@ -109,8 +111,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   btnCart.addEventListener('click', () => {
     tambahCart();
-
   });
+  btnBuy.addEventListener('click', () => {
+    window.location.href  = '../'
+  })
 });
 
 
