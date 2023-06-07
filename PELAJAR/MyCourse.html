@@ -92,18 +92,22 @@
 
       <div class="container">
         <div class="box">
-          <div class="list-course" id="myCourse"></div>
-          <div class="content" style="display: none">
+          <div class="list-myCourse-container">
+            <div class="list-course" id="myCourse"></div>
+          </div>
+          <div class="content" style="display: none;"> 
             <center>
               <img src="../ASET/GAMBAR/peringatan.svg" alt="" />
             </center>
           </div>
         </div>
         <div class="lainnya-container">
-          <div class="judul-course">
-            <h1>Waiting For Payment</h1>
+          <div class="waitingFP-container" style="display: none;">
+            <div class="judul-course">
+              <h1>Waiting For Payment</h1>
+            </div>
+            <div class="list-course" id="waitingPayment"></div>
           </div>
-          <div class="list-course" id="waitingPayment"></div>
 
           <div class="judul-course">
             <h1>You May Also Like</h1>
@@ -136,9 +140,9 @@
                 eiusmod tempor
               </p>
             </div>
-            <a href="courseDetail.html"
-              ><h2 id="harga-kelas">Rp. 300.000</h2></a
-            >
+            <div id="detail-kelas-location">
+              <h2 id="harga-kelas">Rp. 300.000</h2>
+            </div>
           </div>
         </template>
       </div>

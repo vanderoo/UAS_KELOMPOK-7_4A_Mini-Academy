@@ -71,34 +71,25 @@
             <h1 id="cart-page-title">Courses Cart</h1>
             <div class="cart-container-cc">
                 <div class="course-container">
-                    <div class="cart-item">
-                        <div class="course-banner">
-                            <img src="../ASET/GAMBAR/buy_banner.svg" alt="" />
+                    <template id="cart-item-template">
+                        <div class="cart-item">
+                            <div class="course-banner">
+                                <img id="gambar-kelas" src="../ASET/GAMBAR/buy_banner.svg" alt="" />
+                            </div>
+                            <div class="course-info">
+                                <h3 id="course-title">AWS Certified solutions Architect</h3>
+                                <p id="instructor-name">Oleh Tatang Suratang</p>
+                                <h4 id="course-amount">Rp.150.000</h4>
+                            </div>
+                            <a href="" class="delete-course">Hapus</a>
                         </div>
-                        <div class="course-info">
-                            <h3 id="course-title">AWS Certified solutions Architect</h3>
-                            <p id="instructor-name">Oleh Tatang Suratang</p>
-                            <h4 id="course-amount">Rp.150.000</h4>
-                        </div>
-                        <a href="" id="delete-course">Hapus</a>
-                    </div>
-                    <div class="cart-item">
-                        <div class="course-banner">
-                            <img src="../ASET/GAMBAR/buy_banner.svg" alt="" />
-                        </div>
-                        <div class="course-info">
-                            <h3 id="course-title">AWS Certified solutions Architect</h3>
-                            <p id="instructor-name">Oleh Tatang Suratang</p>
-                            <h4 id="course-amount">Rp.150.000</h4>
-                        </div>
-                        <a href="" id="delete-course">Hapus</a>
-                    </div>
+                    </template>
                 </div>
 
                 <div class="checkout-container">
                     <div class="checkout">
                         <h3>Total:</h3>
-                        <h1>Rp.300.000</h1>
+                        <h1 id="total-harga">Rp.300.000</h1>
                         <button type="button" class="btn-co">Checkout</button>
                     </div>
                     <h4 id="accept-method">We Accept:</h4>
@@ -131,6 +122,7 @@
     </footer>
 
     <script src="../JS/navbar.js"></script>
+    <script src="../JS/cart.js"></script>
 
 </body>
 

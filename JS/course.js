@@ -1,21 +1,19 @@
-// Ambil template course-card
 const courseTemplate = document.getElementById('course-template');
-
-// Ambil elemen list-course untuk menambahkan course-card yang diisi
 const listCourse = document.querySelector('.list-course');
+const namaPengajar = document.getElementById('box-nama-pengajar');
+const namaKelas = document.getElementById('box-nama-kelas');
+const deskripsiKelas = document.getElementById('box-deskripsi-kelas');
+const btnLearnNow = document.getElementById('btn-learn-now');
 
-// Fetch data course dari REST API
-function addCourses(){
-  fetch('http://mini-alb-436703962.ap-southeast-1.elb.amazonaws.com/course/course')
+function addCourses() {
+
+  fetch('http://mini-alb-436703962.ap-southeast-1.elb.amazonaws.com/course/notRegistered')
     .then(response => response.json())
     .then(courses => {
-      // Loop melalui setiap course
       courses.forEach(course => {
-        // Kloning template course-card
         const courseCard = courseTemplate.content.cloneNode(true);
         courseCard.querySelector('.course-card').setAttribute('data-idkelas', course.id_kelas);
 
-        // Mengisi data ke dalam elemen-elemen pada template
         courseCard.querySelector('#kategori').textContent = course.id_kategori;
         courseCard.querySelector('#waktu').textContent = course.waktu;
         courseCard.querySelector('#nama-kelas').textContent = course.nama;
@@ -31,15 +29,15 @@ function addCourses(){
         const hargaIDRFormat = parseInt(hargaKelas).toLocaleString('id-ID');
         courseCard.querySelector('#harga-kelas').textContent = `Rp. ${hargaIDRFormat}`;
 
-        // Tambahkan course-card yang diisi ke list-course
         listCourse.appendChild(courseCard);
       });
+      //const detailCourse = document.querySelectorAll('.detail-kelas-location');
       const courseCards = document.querySelectorAll('.course-card');
       courseCards.forEach(courseCard => {
+        const idKelas = courseCard.dataset.idkelas;
         courseCard.addEventListener('click', () => {
-          const idKelas = courseCard.dataset.idkelas;
           console.log(idKelas);
-          // Lakukan operasi lain sesuai dengan ID kelas yang ditekan
+          window.location.href = `../Pelajar/courseDetail.html?idKelas=${idKelas}`;
         });
       });
     })
@@ -47,5 +45,25 @@ function addCourses(){
       console.error('Error:', error.message);
     });
 }
-
 addCourses();
+
+const contentBox = document.querySelector('.content');
+function addRandCourse() {
+  fetch('http://127.0.0.1:3333/course/rand')
+    .then(response => response.json())
+    .then(course => {
+      contentBox.setAttribute('data-idkelas', course.id_kelas);
+      namaPengajar.textContent = course.pengajar.nama;
+      namaKelas.textContent = course.nama;
+      deskripsiKelas.textContent = course.deskripsi;
+    })
+    .catch(error => {
+      console.error('Error:', error.message);
+    });
+}
+addRandCourse();
+btnLearnNow.addEventListener('click', (event) => {
+  event.preventDefault();
+  const idKelas = contentBox.dataset.idkelas;
+  window.location.href = `../Pelajar/courseDetail.html?idKelas=${idKelas}`;
+});

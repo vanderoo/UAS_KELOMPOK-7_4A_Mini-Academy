@@ -52,7 +52,6 @@
 
 .judul-course {
   margin-top: 20px;
-  padding: 0 10%;
 }
 
 .list-course {
@@ -101,7 +100,7 @@
   background: white;
   display: flex;
   flex-direction: column;
-  flex-basis: calc(33% - 17px);
+  flex-basis: calc(33.33% - 20px);
 }
 
 .course-card:hover {
